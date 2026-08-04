@@ -1,0 +1,472 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>LABKESMAS 3 KALTENG</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/home/Logo-Provinsi-Kalimantan-Tengah.png" rel="icon">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/theme.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">   
+      <div class="align-items-center gap-3 d-none d-md-flex">
+        <span id="tanggal"></span>
+        <span class="topbar-sep">|</span>
+        <span><span id="jam"></span> WIB</span>
+      </div>
+      <script>
+        function updateDateTime() {
+          const now = new Date();
+          const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+          const tanggal = now.toLocaleDateString('id-ID', options);
+          const jam = now.toLocaleTimeString('id-ID');
+          document.getElementById("tanggal").innerText = tanggal;
+          document.getElementById("jam").innerText = jam;
+        }
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+      </script>
+      <div class="d-flex align-items-center">
+        <i class="bi bi-phone"></i> 0858-2418-4658
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <a href="index.html" class="logo me-auto"><img src="assets/img/home/Logo-Provinsi-Kalimantan-Tengah.png" alt=""> LABKESMAS</a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html">Beranda</a></li>
+          <li class="dropdown"><a href="#about"><span>Tentang</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="inner-sejarah.html">Sejarah</a></li>
+              <li><a href="inner-profilkepala.html">Profil Kepala UPT</a></li>
+              <li><a href="inner-visimisi.html">Visi dan Misi</a></li>
+              <li><a href="inner-sotk.html">Struktur Organisasi</a></li>
+              <li><a href="inner-tupoksi.html">Tugas dan Fungsi</a></li>
+              <li><a href="inner-akreditasi.html">Akreditasi</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="inner-layanan.html">Layanan</a></li>
+          <li class="dropdown"><a href="#"><span>Tautan</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="https://bit.ly/KuesionerSurvei2026UPTLabkeskal" target="_blank">Survei Persepsi Kualitas Pelayanan (SPKP) <br> Survei Persepsi Anti Korupsi (SPAK)</a></li>
+              <li class="dropdown"><a href="#"><span>Pengaduan Masyarakat</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://wbs.kalteng.go.id/" target="_blank">Whistle Blowing Systems</a></li>
+                  <li><a href="https://www.lapor.go.id/" target="_blank">SP4N Lapor</a></li>
+                  <li><a href="https://bit.ly/DumasUPTLabkeskal" target="_blank">Layanan Pengaduan Masyarakat</a></li>
+                </ul>
+              </li>
+              <li><a href="https://sites.google.com/view/simutlak26/halaman-login" target="_blank">SI MUTLAK</a></li>
+              <li><a href="https://s.id/LabkesmasKalteng" target="_blank">SIAP RESPON</a></li>
+              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf-OevKHcsIN98oxL0-LR9l6VjPK3lJRsnn41dR4F1q9CMycA/viewform" target="_blank">BUKU TAMU DIGITAL</a></li>
+              <li><a href="https://bahalab.labkesmas-kalteng.id/" target="_blank">SI BAHALAB</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="#"><span>Dokumentasi</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="inner-galeri.html">Galeri </a></li>
+              <li><a href="inner-video.html">Video </a></li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="#"><span>PPID</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="inner-ppid.html">SK PPID </a></li>
+              <li class="dropdown"><a href="#"><span>Daftar Informasi Publik</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="inner-inberkala.html">Informasi Berkala</a></li>
+                  <li><a href="inner-insertamerta.html">Informasi Serta Merta</a></li>
+                  <li><a href="inner-insetiapsaat.html">Informasi Setiap Saat</a></li>
+                  </ul>
+              </li>
+              <li><a href="inner-permintaaninformasipublik.html">Permintaan Informasi Publik</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="inner-tracking.html">Tracking</a></li>
+          <li><a class="nav-link scrollto" href="inner-simulasi.html">Simulasi</a></li>
+
+          <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+  <a href="https://labkesmas-kalteng.id/" target="_blank" class="appointment-btn scrollto"><span class="d-none d-md-inline">Login</span> Aplikasi</a>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Permintaan Informasi Publik</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>PPID</li>
+            <li>Permintaan Informasi</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="inner-page">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+
+            <div class="ppid-intro">
+              <div class="ppid-intro-icon"><i class="bi bi-file-earmark-text"></i></div>
+              <h5>Ajukan Permintaan Informasi Publik</h5>
+              <p>Masyarakat dapat mengajukan permintaan informasi publik kepada UPT Laboratorium Kesehatan dan Kalibrasi Provinsi Kalimantan Tengah sesuai dengan Undang-Undang Nomor 14 Tahun 2008 tentang Keterbukaan Informasi Publik. Isi formulir di bawah ini untuk mengajukan permintaan.</p>
+            </div>
+
+            <div class="ppid-form-card">
+              <form id="formPermintaan" onsubmit="return false;">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <label class="form-label">Nama Lengkap <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control ppid-input" required placeholder="Masukkan nama lengkap">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">No. KTP <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control ppid-input" required placeholder="Masukkan nomor KTP">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Email <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control ppid-input" required placeholder="contoh@email.com">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">No. Telepon <span class="text-danger">*</span></label>
+                    <input type="tel" class="form-control ppid-input" required placeholder="08xxxxxxxxxx">
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Alamat <span class="text-danger">*</span></label>
+                    <textarea class="form-control ppid-input" rows="2" required placeholder="Masukkan alamat lengkap"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Jenis Informasi yang Diminta <span class="text-danger">*</span></label>
+                    <textarea class="form-control ppid-input" rows="3" required placeholder="Jelaskan informasi publik yang ingin Anda peroleh"></textarea>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Tujuan Permintaan Informasi <span class="text-danger">*</span></label>
+                    <select class="form-select ppid-input">
+                      <option value="">-- Pilih Tujuan --</option>
+                      <option>Keperluan Pribadi</option>
+                      <option>Penelitian/Akademis</option>
+                      <option>Keperluan Organisasi/Lembaga</option>
+                      <option>Keperluan Jurnalistik</option>
+                      <option>Lainnya</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Cara Memperoleh Informasi <span class="text-danger">*</span></label>
+                    <select class="form-select ppid-input">
+                      <option value="">-- Pilih Cara --</option>
+                      <option>Melihat/Membaca di tempat</option>
+                      <option>Mendapatkan salinan (fotokopi/softcopy)</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Cara Mendapatkan Salinan</label>
+                    <select class="form-select ppid-input">
+                      <option value="">-- Pilih Cara --</option>
+                      <option>Datang langsung ke PPID</option>
+                      <option>Dikirim melalui email</option>
+                      <option>Dikirim melalui pos</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Upload File Pendukung (KTP/Surat Kuasa)</label>
+                    <input type="file" class="form-control ppid-input">
+                  </div>
+                </div>
+
+                <div class="ppid-submit-bar">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="ppidCheck" required>
+                    <label class="form-check-label" for="ppidCheck">
+                      Saya menyatakan bahwa data yang diisi adalah benar dan bertanggung jawab atas permintaan ini.
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary ppid-btn">
+                    <i class="bi bi-send me-2"></i>Kirim Permintaan
+                  </button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Laboratorium Kesehatan Masyarakat Tingkat 3</h3>
+              <p>
+                Jl. Letjend Soeprapto No 01, <br>Palangkaraya, Kalimantan Tengah<br><br>
+                <strong>Phone:</strong> 0858-2418-4658<br>
+                <strong>Email:</strong> blkkalteng@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://twitter.com/labkeskalteng" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://facebook.com/labkeskal" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/labkeskalteng/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.youtube.com/@labkeskalteng" target="_blank" class="youtube"><i class="bx bxl-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Tautan Berguna</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Beranda</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="inner-sejarah.html">Tentang Kami</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan.html">Layanan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="inner-ppid.html">PPID</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="inner-tracking.html">Tracking Hasil</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Layanan Kami</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan.html">Laboratorium Klinik</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan.html">Laboratorium Mikrobiologi Kesehatan Masyarakat</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan.html">Laboratorium Kimia Kesehatan &amp; Toksikologi</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan.html">Laboratorium Biomolekuler</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan.html">Laboratorium Kalibrasi</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Buletin Kami</h4>
+            <p>Silahkan masukan email untuk mengikuti buletin kami</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; 2025 Seluruh Hak Cipta Dilindungi <a href="https://www.instagram.com/ridhooe_/" target="_blank"> <strong><span>RNC Systems</span></strong></a>
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+  </footer>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Modern theme: smooth scroll + motion -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+
+  <!-- PPID Form styles -->
+  <style>
+    .ppid-intro {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .ppid-intro-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #0EA5E9, #0284C7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.25rem;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+    .ppid-intro h5 {
+      font-weight: 800;
+      color: #0F172A;
+      margin-bottom: 0.75rem;
+    }
+    .ppid-intro p {
+      color: #666;
+      line-height: 1.8;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .ppid-form-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 2.5rem;
+      box-shadow: 0 4px 24px rgba(74, 144, 217, 0.06);
+      border: 1px solid rgba(74, 144, 217, 0.06);
+      margin-bottom: 2rem;
+    }
+    .ppid-input {
+      border-radius: 12px;
+      border: 1.5px solid #e0e8f0;
+      padding: 0.7rem 1rem;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      font-size: 0.95rem;
+    }
+    .ppid-input:focus {
+      border-color: #0EA5E9;
+      box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.12);
+    }
+    .form-label {
+      font-weight: 600;
+      color: #333;
+      font-size: 0.9rem;
+      margin-bottom: 0.4rem;
+    }
+    .ppid-submit-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #eef2f7;
+    }
+    .ppid-btn {
+      border-radius: 50px;
+      padding: 0.7rem 2rem;
+      font-weight: 700;
+      background: #0EA5E9;
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .ppid-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(74, 144, 217, 0.3);
+      background: #0284C7;
+    }
+    .ppid-info-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .ppid-info-item {
+      background: #f8fbff;
+      border-radius: 14px;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex: 1;
+      min-width: 200px;
+      border: 1px solid #e8f0fe;
+    }
+    .ppid-info-item i {
+      font-size: 1.5rem;
+      color: #0EA5E9;
+    }
+    .ppid-info-item strong {
+      display: block;
+      font-size: 0.8rem;
+      color: #888;
+      font-weight: 600;
+    }
+    .ppid-info-item span {
+      color: #333;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .ppid-form-card {
+        padding: 1.5rem;
+      }
+      .ppid-submit-bar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
+
+  <!-- PPID Form JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const form = document.getElementById("formPermintaan");
+      form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        const btn = form.querySelector(".ppid-btn");
+        const original = btn.innerHTML;
+        btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Mengirim...';
+        btn.disabled = true;
+        setTimeout(function() {
+          btn.innerHTML = '<i class="bi bi-check-circle me-2"></i>Terkirim';
+          btn.classList.remove("btn-primary");
+          btn.classList.add("btn-success");
+          setTimeout(function() {
+            btn.innerHTML = original;
+            btn.disabled = false;
+            btn.classList.remove("btn-success");
+            btn.classList.add("btn-primary");
+            form.reset();
+          }, 3000);
+        }, 1500);
+      });
+    });
+  </script>
+</body>
+
+</html>
