@@ -85,10 +85,17 @@
               <li><a href="inner-akreditasi.html">Akreditasi</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="inner-layanan.html">Layanan</a></li>
-          <li class="dropdown"><a href="#"><span>Tautan</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="inner-layanan.html"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="https://bit.ly/KuesionerSurvei2026UPTLabkeskal" target="_blank">Survei Persepsi Kualitas Pelayanan (SPKP) <br> Survei Persepsi Anti Korupsi (SPAK)</a></li>
+              <li><a href="inner-layanan-klinik.html">Laboratorium Klinik</a></li>
+              <li><a href="inner-layanan-mikrokesmas.html">Lab Mikrobiologi Kesmas</a></li>
+              <li><a href="inner-layanan-kimkestok.html">Lab Kimia Kesehatan & Toksikologi</a></li>
+              <li><a href="inner-layanan-biomolekuler.html">Laboratorium Biomolekuler</a></li>
+              <li><a href="inner-kalibrasi.html">Laboratorium Kalibrasi</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Tautan</span> <i class="bi bi-chevron-down"></i></a>
+            <ul><li><a href="https://bit.ly/KuesionerSurvei2026UPTLabkeskal" target="_blank">Survei Persepsi Kualitas Pelayanan (SPKP) <br> Survei Persepsi Anti Korupsi (SPAK)</a></li>
               <li class="dropdown"><a href="#"><span>Pengaduan Masyarakat</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="https://wbs.kalteng.go.id/" target="_blank">Whistle Blowing Systems</a></li>
@@ -145,7 +152,7 @@
           <h2>SIMULASI TARIF PENGUJIAN</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Inner Page</li>
+            <li>Simulasi Tarif</li>
           </ol>
         </div>
 
@@ -162,11 +169,12 @@
           <label for="labSelect" class="form-label fw-bold">Pilih Laboratorium:</label>
           <select id="labSelect" class="form-select">
             <option value="">-- Pilih Laboratorium --</option>
-            <option value="labA">Lab Hematologi dan Urinalisa Klinik</option>
-            <option value="labB">Lab Imunoserologi dan Mikrobiologi Klinik</option>
-            <option value="labC">Lab Kimia Klinik</option>
-            <option value="labD">Lab Mikrobiologi Kesehatan Masyarakat</option>
-            <option value="labE">Lab Kimia Kesehatan dan Toksikologi</option>
+            <option value="labA">Laboratorium Hematologi dan Urinalisa Klinik</option>
+            <option value="labB">Laboratorium Imunoserologi dan Mikrobiologi Klinik</option>
+            <option value="labC">Laboratorium Kimia Klinik</option>
+            <option value="labD">Laboratorium Mikrobiologi Kesehatan Masyarakat</option>
+            <option value="labE">Laboratorium Kimia Kesehatan dan Toksikologi</option>
+            <option value="labF">Laboratorium Kalibrasi</option>
           </select>
         </div>
 
@@ -411,6 +419,24 @@
           { id: "permanganat", nama: "Nilai permanganat/ Zat Organik*", harga: 50000 },
           { id: "sulfat", nama: "Sulfat*", harga: 50000 }
         ]
+      },
+      labF: {
+        nama: "Laboratorium Kalibrasi",
+        tests: [
+          { id: "sphygmomanometer_analog", nama: "Sphygmomanometer / Tensimeter Analog", harga: 0 },
+          { id: "tensimeter_digital", nama: "Tensimeter Digital", harga: 0 },
+          { id: "timbang_bayi_mekanik", nama: "Timbang Bayi Mekanik", harga: 0 },
+          { id: "timbang_bayi_digital", nama: "Timbang Bayi Digital", harga: 0 },
+          { id: "timbang_dewasa_mekanik", nama: "Timbang Dewasa Mekanik", harga: 0 },
+          { id: "timbang_dewasa_digital", nama: "Timbang Dewasa Digital", harga: 0 },
+          { id: "centrifuge", nama: "Centrifuge", harga: 0 },
+          { id: "vortex_mixer", nama: "Vortex Mixer", harga: 0 },
+          { id: "ph_meter", nama: "pH Meter", harga: 0 },
+          { id: "tds_meter", nama: "TDS Meter", harga: 0 },
+          { id: "konduktivity_meter", nama: "Konduktivitas Meter", harga: 0 },
+          { id: "do_meter", nama: "DO Meter", harga: 0 },
+          { id: "salinit_meter", nama: "Salinitas Meter", harga: 0 }
+        ]
       }
     };
 
@@ -440,7 +466,7 @@
         div.innerHTML = `
           <input class="form-check-input test-check" type="checkbox" value="${test.harga}" id="${test.id}">
           <label class="form-check-label" for="${test.id}">
-            ${test.nama} (${test.harga > 0 ? 'Rp ' + test.harga.toLocaleString("id-ID") : 'Sesuai Ketentuan'})
+            ${test.nama} (${test.harga > 0 ? 'Rp ' + test.harga.toLocaleString("id-ID") : 'Rp 0'})
           </label>
         `;
         testList.appendChild(div);
@@ -512,11 +538,11 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Layanan Kami</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan.html">Laboratorium Klinik</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan.html">Laboratorium Mikrobiologi Kesehatan Masyarakat</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan.html">Laboratorium Kimia Kesehatan &amp; Toksikologi</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan.html">Laboratorium Biomolekuler</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan.html">Laboratorium Kalibrasi</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan-klinik.html">Laboratorium Klinik</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan-mikrokesmas.html">Laboratorium Mikrobiologi Kesehatan Masyarakat</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan-kimkestok.html">Laboratorium Kimia Kesehatan &amp; Toksikologi</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan-biomolekuler.html">Laboratorium Biomolekuler</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="inner-kalibrasi.html">Laboratorium Kalibrasi</a></li>
             </ul>
           </div>
 
