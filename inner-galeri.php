@@ -5,16 +5,16 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>LABKESMAS 3 KALTENG</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Galeri - LABKESMAS 3 KALTENG</title>
+  <meta content="Galeri foto kegiatan UPT Laboratorium Kesehatan dan Kalibrasi Tingkat 3 Kalimantan Tengah" name="description">
+  <meta content="galeri, foto, kegiatan, labkesmas, UPT labkeskal, kalteng" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/home/Logo-Provinsi-Kalimantan-Tengah.png" rel="icon">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -40,109 +40,11 @@
 </head>
 
 <body>
+  <a href="#main" class="skip-to-content">Langsung ke Konten</a>
 
-  <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="d-flex align-items-center fixed-top">
-    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">   
-      <div class="align-items-center gap-3 d-none d-md-flex">
-        <span id="tanggal"></span>
-        <span class="topbar-sep">|</span>
-        <span><span id="jam"></span> WIB</span>
-      </div>
-      <script>
-        function updateDateTime() {
-          const now = new Date();
-          const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-          const tanggal = now.toLocaleDateString('id-ID', options);
-          const jam = now.toLocaleTimeString('id-ID');
-          document.getElementById("tanggal").innerText = tanggal;
-          document.getElementById("jam").innerText = jam;
-        }
-        setInterval(updateDateTime, 1000);
-        updateDateTime();
-      </script>
-      <div class="d-flex align-items-center">
-        <i class="bi bi-phone"></i> 0858-2418-4658
-      </div>
-    </div>
-  </div>
+  <?php include 'partials/topbar.php'; ?>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
-      <a href="index.html" class="logo me-auto"><img src="assets/img/home/Logo-Provinsi-Kalimantan-Tengah.png" alt=""> LABKESMAS</a>
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto " href="index.html">Beranda</a></li>
-          <li class="dropdown"><a href="#about"><span>Tentang</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="inner-sejarah.html">Sejarah</a></li>
-              <li><a href="inner-profilkepala.html">Profil Kepala UPT</a></li>
-              <li><a href="inner-visimisi.html">Visi dan Misi</a></li>
-              <li><a href="inner-sotk.html">Struktur Organisasi</a></li>
-              <li><a href="inner-tupoksi.html">Tugas dan Fungsi</a></li>
-              <li><a href="inner-akreditasi.html">Akreditasi</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="inner-layanan.html"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="inner-layanan-klinik.html">Laboratorium Klinik</a></li>
-              <li><a href="inner-layanan-mikrokesmas.html">Lab Mikrobiologi Kesmas</a></li>
-              <li><a href="inner-layanan-kimkestok.html">Lab Kimia Kesehatan & Toksikologi</a></li>
-              <li><a href="inner-layanan-biomolekuler.html">Laboratorium Biomolekuler</a></li>
-              <li><a href="inner-kalibrasi.html">Laboratorium Kalibrasi</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Tautan</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="https://bit.ly/KuesionerSurvei2026UPTLabkeskal" target="_blank">Survei Persepsi Kualitas Pelayanan (SPKP) <br> Survei Persepsi Anti Korupsi (SPAK)</a></li>
-              <li class="dropdown"><a href="#"><span>Pengaduan Masyarakat</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="https://wbs.kalteng.go.id/" target="_blank">Whistle Blowing Systems</a></li>
-                  <li><a href="https://www.lapor.go.id/" target="_blank">SP4N Lapor</a></li>
-                  <li><a href="https://bit.ly/DumasUPTLabkeskal" target="_blank">Layanan Pengaduan Masyarakat</a></li>
-                </ul>
-              </li>
-              <li><a href="https://sites.google.com/view/simutlak26/halaman-login" target="_blank">SI MUTLAK</a></li>
-              <li><a href="https://s.id/LabkesmasKalteng" target="_blank">SIAP RESPON</a></li>
-              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf-OevKHcsIN98oxL0-LR9l6VjPK3lJRsnn41dR4F1q9CMycA/viewform" target="_blank">BUKU TAMU DIGITAL</a></li>
-              <li><a href="https://bahalab.labkesmas-kalteng.id/" target="_blank">SI BAHALAB</a></li>
-            </ul>
-          </li>
-
-          <li class="dropdown"><a href="#"><span>Dokumentasi</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="inner-galeri.html">Galeri </a></li>
-              <li><a href="inner-video.html">Video </a></li>
-            </ul>
-          </li>
-          
-          <li class="dropdown"><a href="#"><span>PPID</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="inner-ppid.html">SK PPID </a></li>
-              <li class="dropdown"><a href="#"><span>Daftar Informasi Publik</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="inner-inberkala.html">Informasi Berkala</a></li>
-                  <li><a href="inner-insertamerta.html">Informasi Serta Merta</a></li>
-                  <li><a href="inner-insetiapsaat.html">Informasi Setiap Saat</a></li>
-                  </ul>
-              </li>
-              <li><a href="inner-permintaaninformasipublik.html">Permintaan Informasi Publik</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="inner-tracking.html">Tracking</a></li>
-          <li><a class="nav-link scrollto" href="inner-simulasi.html">Simulasi</a></li>
-
-          <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-  <a href="https://labkesmas-kalteng.id/" target="_blank" class="appointment-btn scrollto"><span class="d-none d-md-inline">Login</span> Aplikasi</a>
-
-    </div>
-  </header><!-- End Header -->
+  <?php include 'partials/header.php'; ?>
 
   <main id="main">
 
@@ -152,7 +54,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Galeri</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Beranda</a></li>
             <li>Galeri</li>
           </ol>
         </div>
@@ -177,10 +79,10 @@
           <div class="col-lg-4 col-md-6 galeri-item" data-category="lab">
             <a href="assets/img/gallery/mikrokesmas.JPG" class="glightbox-galeri" data-gallery="gallery">
               <div class="galeri-card">
-                <img src="assets/img/gallery/mikrokesmas.JPG" class="img-fluid" alt="Lab Mikrobiologi Kesehatan Masyarakat">
+                <img src="assets/img/gallery/mikrokesmas.JPG" class="img-fluid" alt="Laboratorium Mikrobiologi Kesehatan Masyarakat">
                 <div class="galeri-overlay">
                   <div class="galeri-caption">
-                    <h6>Lab Mikrobiologi Kesehatan Masyarakat</h6>
+                    <h6>Laboratorium Mikrobiologi Kesehatan Masyarakat</h6>
                     <span>Laboratorium</span>
                   </div>
                 </div>
@@ -191,10 +93,10 @@
           <div class="col-lg-4 col-md-6 galeri-item" data-category="lab">
             <a href="assets/img/gallery/kimkestok.JPG" class="glightbox-galeri" data-gallery="gallery">
               <div class="galeri-card">
-                <img src="assets/img/gallery/kimkestok.JPG" class="img-fluid" alt="Lab Kimia Kesehatan dan Toksikologi">
+                <img src="assets/img/gallery/kimkestok.JPG" class="img-fluid" alt="Laboratorium Kimia Kesehatan dan Toksikologi">
                 <div class="galeri-overlay">
                   <div class="galeri-caption">
-                    <h6>Lab Kimia Kesehatan & Toksikologi</h6>
+                    <h6>Laboratorium Kimia Kesehatan & Toksikologi</h6>
                     <span>Laboratorium</span>
                   </div>
                 </div>
@@ -205,10 +107,10 @@
           <div class="col-lg-4 col-md-6 galeri-item" data-category="lab">
             <a href="assets/img/gallery/biomolekuler.JPG" class="glightbox-galeri" data-gallery="gallery">
               <div class="galeri-card">
-                <img src="assets/img/gallery/biomolekuler.JPG" class="img-fluid" alt="Lab Biomolekuler">
+                <img src="assets/img/gallery/biomolekuler.JPG" class="img-fluid" alt="Laboratorium Biomolekuler">
                 <div class="galeri-overlay">
                   <div class="galeri-caption">
-                    <h6>Lab Biomolekuler</h6>
+                    <h6>Laboratorium Biomolekuler</h6>
                     <span>Laboratorium</span>
                   </div>
                 </div>
@@ -306,7 +208,7 @@
         <div>
           <div class="d-flex align-items-center justify-content-between mb-4">
             <h4 class="fw-bold mb-0"><i class="bi bi-instagram text-danger me-2" style="color:#e1306c !important;"></i>Instagram</h4>
-            <a href="https://www.instagram.com/labkeskalteng/" target="_blank" class="btn btn-sm rounded-pill px-3" style="border-color:#e1306c;color:#e1306c;">Lihat Semua <i class="bi bi-arrow-right ms-1"></i></a>
+            <a href="https://www.instagram.com/labkeskalteng/" target="_blank" rel="noopener" class="btn btn-sm rounded-pill px-3" style="border-color:#e1306c;color:#e1306c;">Lihat Semua <i class="bi bi-arrow-right ms-1"></i></a>
           </div>
           <div class="row g-4 justify-content-center">
             <div class="col-lg-4 col-md-6">
@@ -331,92 +233,6 @@
     </section>
 
   </main><!-- End #main -->
-
-     <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">
-              <h3>Laboratorium Kesehatan Masyarakat Tingkat 3</h3>
-              <p>
-                Jl. Letjend Soeprapto No 01, <br>Palangkaraya, Kalimantan Tengah<br><br>
-                <strong>Phone:</strong> 0858-2418-4658<br>
-                <strong>Email:</strong> blkkalteng@gmail.com<br>
-              </p>
-              <div class="social-links mt-3">
-                <a href="https://twitter.com/labkeskalteng" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="https://facebook.com/labkeskal" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/labkeskalteng/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.youtube.com/@labkeskalteng" target="_blank" class="youtube"><i class="bx bxl-youtube"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Tautan Berguna</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Beranda</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="inner-sejarah.html">Tentang Kami</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan.html">Layanan</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="inner-ppid.html">PPID</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="inner-tracking.html">Tracking Hasil</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Layanan Kami</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan-klinik.html">Laboratorium Klinik</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan-mikrokesmas.html">Laboratorium Mikrobiologi Kesehatan Masyarakat</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan-kimkestok.html">Laboratorium Kimia Kesehatan &amp; Toksikologi</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan-biomolekuler.html">Laboratorium Biomolekuler</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="inner-kalibrasi.html">Laboratorium Kalibrasi</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Buletin Kami</h4>
-            <p>Silahkan masukan email untuk mengikuti buletin kami</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; 2025 Seluruh Hak Cipta Dilindungi <a href="https://www.instagram.com/ridhooe_/" target="_blank"> <strong><span>RNC Systems</span></strong></a>
-      </div>
-      <div class="credits">
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-  <!-- Modern theme: smooth scroll + motion -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="assets/js/theme.js"></script>
 
   <!-- Gallery styles -->
   <style>
@@ -536,6 +352,5 @@
 
   <!-- Instagram Embed JS -->
   <script async src="//www.instagram.com/embed.js"></script>
-</body>
 
-</html>
+<?php include 'partials/footer.php'; ?>

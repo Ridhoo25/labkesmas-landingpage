@@ -22,7 +22,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--text);
 }
 
@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -242,7 +242,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 13px;
   color: #626262;
   white-space: nowrap;
@@ -497,8 +497,6 @@ h6 {
   background: none;
   font-size: 30px;
   line-height: 0;
-  width: auto;
-  height: auto;
   background: rgba(63, 187, 192, 0.8);
   border-radius: 50px;
   transition: 0.3s;
@@ -534,7 +532,7 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -625,28 +623,34 @@ section {
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 20px 0;
-  background-color: #ecf8f9;
-  min-height: 40px;
+.breadcrumbs,
+section.breadcrumbs {
+  padding: 6px 0 !important;
+  background-color: #ffffff;
+  min-height: unset;
   margin-top: 120px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 @media (max-width: 992px) {
-  .breadcrumbs {
+  .breadcrumbs,
+  section.breadcrumbs {
     margin-top: 70px;
   }
 }
 
 .breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 500;
   margin: 0;
+  color: var(--ink, #0F172A);
+  line-height: 1.4;
 }
 
 @media (max-width: 992px) {
   .breadcrumbs h2 {
-    margin: 0 0 10px 0;
+    margin: 0 0 2px 0;
+    font-size: 14px;
   }
 }
 
@@ -656,32 +660,23 @@ section {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 14px;
+  font-size: 11px;
+  color: var(--muted, #64748B);
+}
+
+.breadcrumbs ol li {
+  line-height: 1.4;
 }
 
 .breadcrumbs ol li+li {
-  padding-left: 10px;
+  padding-left: 6px;
 }
 
 .breadcrumbs ol li+li::before {
   display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
+  padding-right: 6px;
+  color: #94a3b8;
   content: "/";
-}
-
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-
-  .breadcrumbs ol {
-    display: block;
-  }
-
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -768,7 +763,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -845,7 +840,7 @@ section {
 .counts .count-box p {
   padding: 30px 0 0 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
 }
 
@@ -855,7 +850,7 @@ section {
   margin-top: 20px;
   color: #7b7b7b;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -1197,7 +1192,6 @@ section {
   background: #f0fafa;
   position: relative;
   border-radius: 6px;
-  position: relative;
   z-index: 1;
 }
 
@@ -1370,7 +1364,7 @@ section {
   font-size: 36px;
   color: #0284C7;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -1423,10 +1417,8 @@ section {
   padding: 8px 35px 10px 35px;
   border-radius: 4px;
   color: #fff;
-  transition: none;
   font-size: 14px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -1454,7 +1446,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Frequently Asked Questioins
+# Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq {
   padding: 60px 0;
@@ -1474,7 +1466,7 @@ section {
 .faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: #0284C7;
+  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -1670,7 +1662,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 #footer .footer-top .social-links a {

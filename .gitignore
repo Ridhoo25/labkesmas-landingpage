@@ -1,2 +1,6 @@
 .rtk/
 .DS_Store
+assets/data/visitor_count.json
+*.log
+thumbs.db
+desktop.ini
