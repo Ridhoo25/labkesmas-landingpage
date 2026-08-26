@@ -209,7 +209,7 @@
 
       function showLoading() {
         resultEl.hidden = false;
-        resultEl.innerHTML = '<div class="track-loading"><span class="spinner"></span> Mencari data pemeriksaan�</div>';
+        resultEl.innerHTML = '<div class="track-loading"><span class="spinner"></span> Mencari data pemeriksaan...</div>';
         resultEl.scrollIntoView({ behavior: "smooth", block: "center" });
       }
 
@@ -367,7 +367,7 @@
         var url = API_BASE + path + "?" + new URLSearchParams(params).toString();
         var prevLabel = submitBtn.innerHTML;
         submitBtn.disabled = true;
-        submitBtn.innerHTML = '<i class="bi bi-arrow-repeat spin"></i> Mencari�';
+        submitBtn.innerHTML = '<i class="bi bi-arrow-repeat spin"></i> Mencari...';
         showLoading();
 
         fetch(url, { method: "GET", headers: { "Accept": "application/json" } })

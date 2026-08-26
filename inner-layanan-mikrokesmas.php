@@ -79,7 +79,7 @@
                   <thead>
                     <tr>
                       <th>No</th>
-                      <th>Kelompok Sampel � Parameter</th>
+                      <th>Kelompok Sampel &amp; Parameter</th>
                       <th class="text-center" width="140">Tarif</th>
                     </tr>
                   </thead>
