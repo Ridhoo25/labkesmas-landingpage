@@ -129,6 +129,46 @@
 
         </div>
 
+        <!-- Dokumen Tarif -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="section-title text-center" data-aos="fade-up">
+              <span class="eyebrow">Dokumen Resmi</span>
+              <h2>Daftar Tarif Pengujian</h2>
+              <p>Download daftar dan tarif layanan pengujian laboratorium sesuai Peraturan Daerah Provinsi Kalimantan Tengah.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mb-5">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="layanan-card text-center p-4">
+              <div class="icon mb-3"><i class="bi bi-file-earmark-pdf fs-1 text-danger"></i></div>
+              <h5>Tarif Klinik</h5>
+              <p class="small text-muted">Daftar dan Tarif Pengujian Bidang Klinik</p>
+              <a href="assets/doc/1. Daftar dan Tarif Pengujian Bidang Klinik.pdf" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3 mt-2"><i class="bi bi-download me-1"></i>Download</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="layanan-card text-center p-4">
+              <div class="icon mb-3"><i class="bi bi-file-earmark-pdf fs-1 text-danger"></i></div>
+              <h5>Tarif Mikrobiologi Kesmas</h5>
+              <p class="small text-muted">Daftar dan Tarif Pengujian Bidang Mikrobiologi Kesehatan Masyarakat</p>
+              <a href="assets/doc/2. Daftar dan Tarif Pengujian Bidang Mikrobiologi Kesmas.pdf" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3 mt-2"><i class="bi bi-download me-1"></i>Download</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="layanan-card text-center p-4">
+              <div class="icon mb-3"><i class="bi bi-file-earmark-pdf fs-1 text-danger"></i></div>
+              <h5>Tarif Kimia Kesehatan & Toksikologi</h5>
+              <p class="small text-muted">Daftar dan Tarif Pengujian Bidang Kimia Kesehatan dan Toksikologi</p>
+              <a href="assets/doc/3. Daftar dan Tarif Pengujian Bidang Kimia Kesehatan dan Toksikologi.pdf" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3 mt-2"><i class="bi bi-download me-1"></i>Download</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
