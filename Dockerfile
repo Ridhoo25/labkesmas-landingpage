@@ -2,9 +2,9 @@ FROM php:8.2-fpm-alpine
 
 RUN apk add --no-cache nginx supervisor
 
-RUN mkdir -p /var/www/html /run/nginx
+RUN mkdir -p /var/www/html /run/nginx /var/cache/nginx
 
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx.conf /etc/nginx/http.d/default.conf
 COPY . /var/www/html
 
 RUN chown -R www-data:www-data /var/www/html
