@@ -66,11 +66,95 @@
     <section class="inner-page">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="sotk-card">
-              <img src="assets/img/tentang/STRUKTUR-UPT-LABKES-15072024-724x1024.png" class="img-fluid" alt="Struktur Organisasi UPT Laboratorium Kesehatan Masyarakat Tingkat 3">
+          <div class="col-lg-10">
+
+            <div class="org-chart">
+
+              <!-- Kepala UPT -->
+              <div class="org-level org-level-top" data-aos="fade-down">
+                <div class="org-box org-box-head">
+                  <div class="org-icon"><i class="bi bi-person-badge"></i></div>
+                  <h5>Kepala UPT Laboratorium Kesehatan dan Kalibrasi Tingkat 3</h5>
+                  <span class="org-name">dr. Damar Pramusinta, MPH</span>
+                </div>
+              </div>
+
+              <div class="org-connector org-connector-down">
+                <div class="org-line-v"></div>
+              </div>
+
+              <!-- 3 Kepala Seksi / Sub Bagian -->
+              <div class="org-level org-level-children" data-aos="fade-up" data-aos-delay="100">
+                <div class="org-connector-h">
+                  <div class="org-line-h"></div>
+                </div>
+                <div class="org-children-row">
+
+                  <!-- Sub Bagian Tata Usaha -->
+                  <div class="org-col">
+                    <div class="org-box org-box-child">
+                      <div class="org-icon"><i class="bi bi-journal-text"></i></div>
+                      <h5>Kepala Sub Bagian Tata Usaha</h5>
+                      <span class="org-name-sm">Muhammad Rustam Effendy, S.Kep., M.A.P.</span>
+                    </div>
+                    <div class="org-connector-down-sm"><div class="org-line-v-sm"></div></div>
+                    <div class="org-fungsional-group">
+                      <div class="org-box org-box-fung">
+                        <i class="bi bi-person me-1"></i> Staf Tata Usaha
+                      </div>
+                      <div class="org-box org-box-fung">
+                        <i class="bi bi-person me-1"></i> Staf Kepegawaian
+                      </div>
+                      <div class="org-box org-box-fung">
+                        <i class="bi bi-person me-1"></i> Staf Keuangan
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Seksi Pemeliharaan Alat Kesehatan dan Kalibrasi -->
+                  <div class="org-col">
+                    <div class="org-box org-box-child">
+                      <div class="org-icon"><i class="bi bi-tools"></i></div>
+                      <h5>Kepala Seksi Pemeliharaan Alat Kesehatan dan Kalibrasi</h5>
+                      <span class="org-name-sm">Eko Hafiz Rianto, S.Si., M.KL.</span>
+                    </div>
+                    <div class="org-connector-down-sm"><div class="org-line-v-sm"></div></div>
+                    <div class="org-fungsional-group">
+                      <div class="org-box org-box-fung">
+                        <i class="bi bi-person me-1"></i> Elektromedis
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Seksi Laboratorium Kesehatan Masyarakat dan Klinik -->
+                  <div class="org-col">
+                    <div class="org-box org-box-child">
+                      <div class="org-icon"><i class="bi bi-microscope"></i></div>
+                      <h5>Kepala Seksi Laboratorium Kesehatan Masyarakat dan Klinik</h5>
+                      <span class="org-name-sm">Agus, S.Si., M.MKes., M.Si.</span>
+                    </div>
+                    <div class="org-connector-down-sm"><div class="org-line-v-sm"></div></div>
+                    <div class="org-fungsional-group">
+                      <div class="org-box org-box-fung">
+                        <i class="bi bi-person me-1"></i> Analis Mikrobiologi Kesehatan Masyarakat
+                      </div>
+                      <div class="org-box org-box-fung">
+                        <i class="bi bi-person me-1"></i> Analis Kimia Kesehatan dan Toksikologi
+                      </div>
+                      <div class="org-box org-box-fung">
+                        <i class="bi bi-person me-1"></i> Analis Klinik
+                      </div>
+                      <div class="org-box org-box-fung">
+                        <i class="bi bi-person me-1"></i> Analis Biomolekuler
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
             </div>
-            <p class="sotk-caption">Gambar 1. Struktur Organisasi UPT Laboratorium Kesehatan Masyarakat Tingkat 3</p>
+
           </div>
         </div>
       </div>
@@ -80,27 +164,181 @@
 
   <!-- SOTK styles -->
   <style>
-    .sotk-card {
+    .org-chart {
+      padding: 2rem 0;
+    }
+    .org-level {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .org-level-top {
+      margin-bottom: 0;
+    }
+    .org-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      min-width: 200px;
+      max-width: 300px;
+    }
+    .org-box {
       background: #fff;
-      border-radius: 24px;
-      padding: 1.5rem;
-      box-shadow: 0 8px 32px rgba(14, 165, 233, 0.08);
-      border: 1px solid rgba(14, 165, 233, 0.06);
+      border-radius: 16px;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      border: 2px solid rgba(14, 165, 233, 0.15);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
     }
-    .sotk-card:hover {
+    .org-box:hover {
       transform: translateY(-4px);
-      box-shadow: 0 16px 48px rgba(14, 165, 233, 0.14);
+      box-shadow: 0 12px 36px rgba(14, 165, 233, 0.15);
     }
-    .sotk-card img {
-      border-radius: 12px;
+    .org-box-head {
+      background: linear-gradient(135deg, #0ea5e9, #0284c7);
+      color: #fff;
+      border: none;
+      min-width: 320px;
+    }
+    .org-box-head:hover {
+      box-shadow: 0 12px 36px rgba(14, 165, 233, 0.3);
+    }
+    .org-box-head h5 {
+      color: #fff;
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .org-name {
+      display: block;
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 0.85rem;
+      margin-top: 0.4rem;
+      font-weight: 400;
+    }
+    .org-name-sm {
+      display: block;
+      color: #64748b;
+      font-size: 0.8rem;
+      margin-top: 0.35rem;
+      font-weight: 400;
+    }
+    .org-box-child {
+      flex: 1;
+      min-width: 200px;
+      max-width: 300px;
       width: 100%;
     }
-    .sotk-caption {
-      text-align: center;
-      color: #999;
-      font-size: 0.85rem;
-      margin-top: 1rem;
+    .org-box-child h5 {
+      color: #0ea5e9;
+      margin: 0.5rem 0 0;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    .org-box-fung {
+      padding: 0.6rem 1rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: #475569;
+      border: 1px solid rgba(14, 165, 233, 0.12);
+      border-radius: 10px;
+      background: #f0f9ff;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 0.5rem;
+    }
+    .org-box-fung:last-child {
+      margin-bottom: 0;
+    }
+    .org-box-fung:hover {
+      background: #e0f2fe;
+      border-color: rgba(14, 165, 233, 0.25);
+    }
+    .org-fungsional-group {
+      width: 100%;
+    }
+    .org-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 0.75rem;
+      font-size: 1.25rem;
+    }
+    .org-box-head .org-icon {
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+    .org-box-child .org-icon {
+      background: rgba(14, 165, 233, 0.1);
+      color: #0ea5e9;
+    }
+    .org-connector-down {
+      height: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    .org-connector-down-sm {
+      height: 24px;
+      display: flex;
+      justify-content: center;
+    }
+    .org-line-v {
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(to bottom, #0ea5e9, #bae6fd);
+    }
+    .org-line-v-sm {
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(to bottom, #bae6fd, #e0f2fe);
+    }
+    .org-connector-h {
+      display: flex;
+      justify-content: center;
+      padding: 0 2rem;
+    }
+    .org-line-h {
+      width: 80%;
+      max-width: 700px;
+      height: 2px;
+      background: linear-gradient(to right, #bae6fd, #0ea5e9, #bae6fd);
+    }
+    .org-children-row {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      width: 100%;
+      padding-top: 0;
+    }
+
+    @media (max-width: 992px) {
+      .org-children-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+      .org-col {
+        max-width: 100%;
+        width: 100%;
+      }
+      .org-box-child {
+        max-width: 100%;
+        width: 100%;
+      }
+      .org-box-head {
+        min-width: auto;
+        width: 100%;
+      }
+      .org-line-h {
+        display: none;
+      }
     }
   </style>
 
