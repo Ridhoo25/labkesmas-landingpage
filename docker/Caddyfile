@@ -1,0 +1,53 @@
+# Caddyfile untuk labkesmas landing page
+# Domain: labkesmas.kalteng.go.id
+# /api/* diproxy ke backend API
+
+labkesmas.kalteng.go.id {
+    root * /srv
+
+    # Proxy /api ke backend (SEBELUM block rules)
+    handle_path /api/* {
+        reverse_proxy https://{env.API_HOST} {
+            transport tls {
+                insecure_skip_verify
+            }
+        }
+    }
+
+    # Block akses ke file sensitif
+    @blocked {
+        path *.md
+        path .git*
+        path .dockerignore
+        path .gitignore
+        path .rtk*
+        path Dockerfile
+        path docker-compose*
+        path supervisord.conf
+        path nginx.conf
+    }
+    respond @blocked 403
+
+    # Handle clean URLs: /inner-sejarah -> /inner-sejarah.php
+    try_files {path} {path}.php {path}/index.php
+
+    # Serve static files (.php as HTML, assets, images, etc.)
+    file_server
+
+    # Compress responses
+    encode gzip zstd
+
+    # Security headers
+    header {
+        X-Content-Type-Options nosniff
+        X-Frame-Options SAMEORIGIN
+        Referrer-Policy strict-origin-when-cross-origin
+        -Server
+    }
+
+    # Cache static assets
+    @static {
+        path *.css *.js *.png *.jpg *.jpeg *.gif *.ico *.svg *.woff *.woff2 *.ttf *.eot
+    }
+    header @static Cache-Control "public, max-age=2592000"
+}

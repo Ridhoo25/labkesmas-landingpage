@@ -4,9 +4,11 @@
 Dockerfile
 docker-compose.yml
 docker-compose.yaml
+docker-compose-dokploy.yml
 .dockerignore
 README.md
 AGENTS.md
 CLAUDE.md
 *.md
+docker/
 assets/data/visitor_count.json
