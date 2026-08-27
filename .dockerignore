@@ -4,7 +4,6 @@
 Dockerfile
 docker-compose.yml
 docker-compose.yaml
-docker-compose-dokploy.yml
 .dockerignore
 README.md
 AGENTS.md
