@@ -73,7 +73,7 @@
               <!-- Kepala UPT -->
               <div class="org-level org-level-top" data-aos="fade-down">
                 <div class="org-box org-box-head">
-                  <div class="org-icon"><i class="bi bi-person-badge"></i></div>
+                  <img src="assets/img/tentang/kepala-upt.jpg" alt="Kepala UPT" class="org-photo">
                   <h5>Kepala UPT Laboratorium Kesehatan dan Kalibrasi Tingkat 3</h5>
                   <span class="org-name">dr. Damar Pramusinta, MPH</span>
                 </div>
@@ -93,60 +93,44 @@
                   <!-- Sub Bagian Tata Usaha -->
                   <div class="org-col">
                     <div class="org-box org-box-child">
-                      <div class="org-icon"><i class="bi bi-journal-text"></i></div>
+                      <img src="assets/img/tentang/kadastu.jpg" alt="Kepala Sub Bagian Tata Usaha" class="org-photo-sm">
                       <h5>Kepala Sub Bagian Tata Usaha</h5>
                       <span class="org-name-sm">Muhammad Rustam Effendy, S.Kep., M.A.P.</span>
                     </div>
                     <div class="org-connector-down-sm"><div class="org-line-v-sm"></div></div>
                     <div class="org-fungsional-group">
-                      <div class="org-box org-box-fung">
-                        <i class="bi bi-person me-1"></i> Staf Tata Usaha
-                      </div>
-                      <div class="org-box org-box-fung">
-                        <i class="bi bi-person me-1"></i> Staf Kepegawaian
-                      </div>
-                      <div class="org-box org-box-fung">
-                        <i class="bi bi-person me-1"></i> Staf Keuangan
-                      </div>
+                      <div class="org-box org-box-fung">Staf Tata Usaha</div>
+                      <div class="org-box org-box-fung">Staf Kepegawaian</div>
+                      <div class="org-box org-box-fung">Staf Keuangan</div>
                     </div>
                   </div>
 
                   <!-- Seksi Pemeliharaan Alat Kesehatan dan Kalibrasi -->
                   <div class="org-col">
                     <div class="org-box org-box-child">
-                      <div class="org-icon"><i class="bi bi-tools"></i></div>
+                      <img src="assets/img/tentang/kasi-alkes.jpg" alt="Kepala Seksi Pemeliharaan Alat Kesehatan dan Kalibrasi" class="org-photo-sm">
                       <h5>Kepala Seksi Pemeliharaan Alat Kesehatan dan Kalibrasi</h5>
                       <span class="org-name-sm">Eko Hafiz Rianto, S.Si., M.KL.</span>
                     </div>
                     <div class="org-connector-down-sm"><div class="org-line-v-sm"></div></div>
                     <div class="org-fungsional-group">
-                      <div class="org-box org-box-fung">
-                        <i class="bi bi-person me-1"></i> Elektromedis
-                      </div>
+                      <div class="org-box org-box-fung">Elektromedis</div>
                     </div>
                   </div>
 
                   <!-- Seksi Laboratorium Kesehatan Masyarakat dan Klinik -->
                   <div class="org-col">
                     <div class="org-box org-box-child">
-                      <div class="org-icon"><i class="bi bi-microscope"></i></div>
+                      <img src="assets/img/tentang/kasi-labkesmas.jpg" alt="Kepala Seksi Laboratorium Kesehatan Masyarakat dan Klinik" class="org-photo-sm">
                       <h5>Kepala Seksi Laboratorium Kesehatan Masyarakat dan Klinik</h5>
                       <span class="org-name-sm">Agus, S.Si., M.MKes., M.Si.</span>
                     </div>
                     <div class="org-connector-down-sm"><div class="org-line-v-sm"></div></div>
                     <div class="org-fungsional-group">
-                      <div class="org-box org-box-fung">
-                        <i class="bi bi-person me-1"></i> Analis Mikrobiologi Kesehatan Masyarakat
-                      </div>
-                      <div class="org-box org-box-fung">
-                        <i class="bi bi-person me-1"></i> Analis Kimia Kesehatan dan Toksikologi
-                      </div>
-                      <div class="org-box org-box-fung">
-                        <i class="bi bi-person me-1"></i> Analis Klinik
-                      </div>
-                      <div class="org-box org-box-fung">
-                        <i class="bi bi-person me-1"></i> Analis Biomolekuler
-                      </div>
+                      <div class="org-box org-box-fung">Analis Mikrobiologi Kesehatan Masyarakat</div>
+                      <div class="org-box org-box-fung">Analis Kimia Kesehatan dan Toksikologi</div>
+                      <div class="org-box org-box-fung">Analis Klinik</div>
+                      <div class="org-box org-box-fung">Analis Biomolekuler</div>
                     </div>
                   </div>
 
@@ -260,23 +244,23 @@
     .org-fungsional-group {
       width: 100%;
     }
-    .org-icon {
-      width: 48px;
-      height: 48px;
+    .org-photo {
+      width: 64px;
+      height: 64px;
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      object-fit: cover;
       margin: 0 auto 0.75rem;
-      font-size: 1.25rem;
+      border: 3px solid rgba(255, 255, 255, 0.4);
+      display: block;
     }
-    .org-box-head .org-icon {
-      background: rgba(255, 255, 255, 0.2);
-      color: #fff;
-    }
-    .org-box-child .org-icon {
-      background: rgba(14, 165, 233, 0.1);
-      color: #0ea5e9;
+    .org-photo-sm {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 0.6rem;
+      border: 2px solid rgba(14, 165, 233, 0.2);
+      display: block;
     }
     .org-connector-down {
       height: 40px;
