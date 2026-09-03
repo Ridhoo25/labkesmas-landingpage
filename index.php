@@ -57,6 +57,18 @@
         padding: 2rem 1.5rem;
       }
     }
+    @media (max-width: 576px) {
+      .layanan-cta-card {
+        padding: 1.5rem 1rem;
+        border-radius: 16px;
+      }
+      .layanan-cta-card h3 {
+        font-size: 1.2rem;
+      }
+      .layanan-cta-card p {
+        font-size: 0.9rem;
+      }
+    }
   </style>
 
   <!-- =======================================================
@@ -436,7 +448,7 @@
       </div>
 
       <div>
-        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63789.62767232082!2d113.86046505891967!3d-2.2096160096890616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dfcbf116a995427%3A0xfa758015ddea8a0a!2sPalangkaraya%2C%20Kec.%20Jekan%20Raya%2C%20Kota%20Palangka%20Raya%2C%20Kalimantan%20Tengah!5e0!3m2!1sid!2sid!4v1728491907275!5m2!1sid!2sid"frameborder="0" allowfullscreen></iframe>
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63789.62767232082!2d113.86046505891967!3d-2.2096160096890616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dfcbf116a995427%3A0xfa758015ddea8a0a!2sPalangkaraya%2C%20Kec.%20Jekan%20Raya%2C%20Kota%20Palangka%20Raya%2C%20Kalimantan%20Tengah!5e0!3m2!1sid!2sid!4v1728491907275!5m2!1sid!2sid"frameborder="0" allowfullscreen class="contact-map"></iframe>
       </div>
 
       <div class="container">

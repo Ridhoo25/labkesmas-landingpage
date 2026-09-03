@@ -52,18 +52,20 @@
               <div class="newsletter-success" style="display:none; color:var(--secondary); margin-top:8px; font-size:0.9rem;">Terima kasih telah berlangganan!</div>
             </form>
             <div class="mt-3" style="font-size:.75rem; color:#fff;">
-              <table>
+              <div class="table-responsive">
+              <table class="visitor-counter-table">
                 <tr>
-                  <td style="padding-right:1.5rem; padding-bottom:4px;">Total Pengunjung</td>
-                  <td style="padding-right:1.5rem; padding-bottom:4px;">Bulan ini</td>
-                  <td style="padding-bottom:4px;">Hari ini</td>
+                  <td>Total Pengunjung</td>
+                  <td>Bulan ini</td>
+                  <td>Hari ini</td>
                 </tr>
                 <tr>
-                  <td style="padding-right:1.5rem;"><strong style="font-size:.9rem;" id="vc-total">-</strong></td>
-                  <td style="padding-right:1.5rem;"><strong style="font-size:.9rem;" id="vc-month">-</strong></td>
-                  <td><strong style="font-size:.9rem;" id="vc-day">-</strong></td>
+                  <td><strong id="vc-total">-</strong></td>
+                  <td><strong id="vc-month">-</strong></td>
+                  <td><strong id="vc-day">-</strong></td>
                 </tr>
               </table>
+              </div>
             </div>
           </div>
 

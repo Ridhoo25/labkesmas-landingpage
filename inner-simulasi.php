@@ -404,8 +404,47 @@
 
   </main>
 
-  <!-- Simulasi page styles -->
+    <!-- Simulasi page styles -->
   <style>
+    html, body { overflow-x: hidden; }
+    #main { overflow-x: hidden; }
+
+    /* Select lab */
+    #labSelect {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+    }
+
+    /* Card daftar pemeriksaan */
+    #daftarPemeriksaan {
+      overflow: hidden;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+    #daftarPemeriksaan h5 {
+      word-break: break-word;
+      overflow-wrap: break-word;
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+    }
+    #daftarPemeriksaan .form-check {
+      padding-left: 1.75rem;
+      display: flex;
+      align-items: baseline;
+      gap: .4rem;
+    }
+    #daftarPemeriksaan .form-check-input {
+      flex-shrink: 0;
+      margin-top: 0;
+    }
+    #daftarPemeriksaan .form-check-label {
+      word-break: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
+      min-width: 0;
+    }
+
+    /* Total panel */
     .total-panel {
       position: sticky;
       top: 130px;
@@ -442,16 +481,20 @@
       opacity: 0.6;
       margin-top: 0.75rem;
     }
+
     @media (max-width: 991px) {
-      .total-panel {
-        position: static;
-      }
-      .total-panel-card {
-        padding: 1.5rem 1rem;
-      }
-      .total-panel-amount {
-        font-size: 2rem;
-      }
+      .total-panel { position: static; }
+      .total-panel-card { padding: 1.5rem 1rem; }
+      .total-panel-amount { font-size: 2rem; }
+    }
+    @media (max-width: 576px) {
+      #daftarPemeriksaan { padding: 1rem !important; }
+      #daftarPemeriksaan .form-check { padding-left: 1.5rem; gap: .3rem; }
+      #daftarPemeriksaan .form-check-label { font-size: .85rem; line-height: 1.4; }
+      .total-panel-card { padding: 1.2rem .75rem; }
+      .total-panel-amount { font-size: 1.5rem; }
+      .total-panel-label { font-size: .8rem; letter-spacing: 1px; }
+      .total-panel-sub { font-size: .7rem; }
     }
   </style>
 
