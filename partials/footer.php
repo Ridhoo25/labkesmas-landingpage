@@ -29,6 +29,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan.php">Layanan</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="inner-ppid.php">PPID</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="inner-tracking.php">Tracking Hasil</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="inner-simulasi.php">Simulasi Tarif</a></li>
             </ul>
           </div>
 
@@ -52,10 +53,14 @@
               <div class="newsletter-success" style="display:none; color:var(--secondary); margin-top:8px; font-size:0.9rem;">Terima kasih telah berlangganan!</div>
             </form>
             <div class="mt-3" style="font-size:.75rem; color:#fff;">
+              <div style="margin-bottom:6px;">
+                <select id="vc-filter-year" class="vc-select"></select>
+                <select id="vc-filter-month" class="vc-select" style="margin-left:4px;"></select>
+              </div>
               <div class="table-responsive">
               <table class="visitor-counter-table">
                 <tr>
-                  <td>Total Pengunjung</td>
+                  <td>Total</td>
                   <td>Bulan ini</td>
                   <td>Hari ini</td>
                 </tr>
@@ -75,19 +80,61 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; 2026 v2.0 | Seluruh Hak Cipta Dilindungi <a href="https://www.instagram.com/ridhooe_/" target="_blank" rel="noopener"> <strong><span>RNC Systems</span></strong></a>
+       2026 &copy; <a href="https://www.instagram.com/ridhooe_/" target="_blank" rel="noopener"> <strong><span>M. Jamaludin Ridho</span></strong> </a> | Seksi Pemeliharaan Alat Kesehatan dan Kalibrasi
       </div>
       <div class="credits">
       </div>
     </div>
 
+  <style>
+  .vc-select{background:var(--primary);color:#fff;border:none;border-radius:4px;padding:2px 6px;font-size:.7rem}
+  .vc-select option{background:var(--primary);color:#fff}
+  </style>
   <script>
-  fetch('api/visitor-counter.php').then(function(r){return r.json();}).then(function(d){
-    var t=document.getElementById('vc-total'),m=document.getElementById('vc-month'),y=document.getElementById('vc-day');
-    if(t)t.textContent=d.total.toLocaleString('id-ID');
-    if(m)m.textContent=d.month.toLocaleString('id-ID');
-    if(y)y.textContent=d.day.toLocaleString('id-ID');
-  }).catch(function(){});
+  (function(){
+    var elTotal=document.getElementById('vc-total');
+    var elMonth=document.getElementById('vc-month');
+    var elDay=document.getElementById('vc-day');
+    var selYear=document.getElementById('vc-filter-year');
+    var selMonth=document.getElementById('vc-filter-month');
+    var monthNames=['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'];
+
+    var now=new Date();
+    var curYear=now.getFullYear();
+    var curMonth=now.getMonth()+1;
+
+    for(var y=curYear;y>=curYear-4;y--){
+      var o=document.createElement('option');o.value=y;o.textContent=y;
+      if(y===curYear)o.selected=true;
+      selYear.appendChild(o);
+    }
+    for(var m=1;m<=12;m++){
+      var om=document.createElement('option');om.value=m;om.textContent=monthNames[m-1];
+      if(m===curMonth)om.selected=true;
+      selMonth.appendChild(om);
+    }
+
+    function loadCounter(year,month){
+      var url='api/visitor-counter.php?year='+year+'&month='+month;
+      fetch(url).then(function(r){return r.json();}).then(function(d){
+        if(elTotal)elTotal.textContent=d.total.toLocaleString('id-ID');
+        if(elMonth)elMonth.textContent=d.month.toLocaleString('id-ID');
+        if(elDay){
+          if(d.day!==null)elDay.textContent=d.day.toLocaleString('id-ID');
+          else elDay.textContent='-';
+        }
+      }).catch(function(){});
+    }
+
+    loadCounter(curYear,curMonth);
+
+    selYear.addEventListener('change',function(){
+      loadCounter(parseInt(selYear.value),parseInt(selMonth.value));
+    });
+    selMonth.addEventListener('change',function(){
+      loadCounter(parseInt(selYear.value),parseInt(selMonth.value));
+    });
+  })();
   </script>
   </footer><!-- End Footer -->
 

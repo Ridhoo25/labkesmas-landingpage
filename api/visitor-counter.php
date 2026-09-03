@@ -1,55 +1,68 @@
 <?php
 /**
  * Visitor Counter - LABKESMAS 3 KALTENG
- * Total / Bulan ini / Hari ini
+ * Uses CountAPI (countapi.xyz) for persistent counting across deploys.
+ * Query params: ?year=2026&month=09 (optional, defaults to current)
  */
 
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 
-$countFile = __DIR__ . '/../assets/data/visitor_count.json';
-
-if (!is_dir(dirname($countFile))) {
-    mkdir(dirname($countFile), 0755, true);
-}
-
-$count = ['total' => 0, 'month' => 0, 'day' => 0, 'month_key' => '', 'day_key' => ''];
-
-if (file_exists($countFile)) {
-    $data = json_decode(file_get_contents($countFile), true);
-    if ($data) $count = array_merge($count, $data);
-}
-
-$now = new DateTime('now', new DateTimeZone('Asia/Jakarta'));
-$monthKey = $now->format('Y-m');
-$dayKey = $now->format('Y-m-d');
-
 if (!isset($_SESSION)) session_start();
 
-if (!isset($_SESSION['visitor_counted'])) {
-    $count['total'] = (int)$count['total'] + 1;
+$namespace = 'labkesmas3kalteng';
 
-    if (!isset($count['month_key']) || $count['month_key'] !== $monthKey) {
-        $count['month'] = 1;
-        $count['month_key'] = $monthKey;
-    } else {
-        $count['month'] = (int)$count['month'] + 1;
-    }
+$now   = new DateTime('now', new DateTimeZone('Asia/Jakarta'));
+$currentYear  = (int)$now->format('Y');
+$currentMonth = (int)$now->format('m');
+$monthKey = $now->format('Y-m');
+$dayKey   = $now->format('Y-m-d');
 
-    if (!isset($count['day_key']) || $count['day_key'] !== $dayKey) {
-        $count['day'] = 1;
-        $count['day_key'] = $dayKey;
-    } else {
-        $count['day'] = (int)$count['day'] + 1;
-    }
+$reqYear  = isset($_GET['year']) ? (int)$_GET['year'] : $currentYear;
+$reqMonth = isset($_GET['month']) ? (int)$_GET['month'] : $currentMonth;
 
+$isCurrentPeriod = ($reqYear === $currentYear && $reqMonth === $currentMonth);
+
+function countapi_hit($ns, $key) {
+    $url = "https://api.countapi.xyz/hit/{$ns}/{$key}";
+    $ctx = stream_context_create(['http' => ['timeout' => 3]]);
+    $res = @file_get_contents($url, false, $ctx);
+    if ($res === false) return null;
+    $json = json_decode($res, true);
+    return isset($json['value']) ? $json['value'] : null;
+}
+
+function countapi_get($ns, $key) {
+    $url = "https://api.countapi.xyz/get/{$ns}/{$key}";
+    $ctx = stream_context_create(['http' => ['timeout' => 3]]);
+    $res = @file_get_contents($url, false, $ctx);
+    if ($res === false) return null;
+    $json = json_decode($res, true);
+    return isset($json['value']) ? $json['value'] : null;
+}
+
+$reqMonthKey = $reqYear . '-' . str_pad($reqMonth, 2, '0', STR_PAD_LEFT);
+
+if ($isCurrentPeriod && !isset($_SESSION['visitor_counted'])) {
+    $total = countapi_hit($namespace, 'total');
+    $month = countapi_hit($namespace, "month-{$monthKey}");
+    $day   = countapi_hit($namespace, "day-{$dayKey}");
+    $yearCount = countapi_hit($namespace, "year-{$currentYear}");
     $_SESSION['visitor_counted'] = true;
-
-    file_put_contents($countFile, json_encode($count, JSON_PRETTY_PRINT));
+} else {
+    $total = countapi_get($namespace, 'total');
+    $month = countapi_get($namespace, "month-{$reqMonthKey}");
+    $day   = ($isCurrentPeriod)
+        ? countapi_get($namespace, "day-{$dayKey}")
+        : null;
+    $yearCount = countapi_get($namespace, "year-{$reqYear}");
 }
 
 echo json_encode([
-    'total' => (int)$count['total'],
-    'month' => (int)$count['month'],
-    'day'   => (int)$count['day']
+    'total'     => (int)($total ?: 0),
+    'month'     => (int)($month ?: 0),
+    'day'       => $day !== null ? (int)$day : null,
+    'year'      => (int)($yearCount ?: 0),
+    'yearLabel' => $reqYear,
+    'monthLabel' => $reqMonth
 ]);

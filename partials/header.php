@@ -27,6 +27,7 @@
           </li>
           <li class="dropdown"><a href="#"><span>Tautan</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
+              <li><a href="https://skm.go.id/share/instansi/62982dcd-ea8f-44a3-8e08-b275a694abf1/2" target="_blank" rel="noopener">SKM Online KemenPANRB</a></li>
               <li><a href="https://bit.ly/KuesionerSurvei2026UPTLabkeskal" target="_blank" rel="noopener">Survei Persepsi Kualitas Pelayanan (SPKP) <br> Survei Persepsi Anti Korupsi (SPAK)</a></li>
               <li class="dropdown"><a href="#"><span>Pengaduan Masyarakat</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
