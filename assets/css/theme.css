@@ -1259,13 +1259,13 @@ body:has(#hero) #header:not(.header-scrolled) .mobile-nav-toggle { color: var(--
   font-size: .74rem;
 }
 #footer .copyright a {
-  color: #1D4ED8;
+  color: #fff;
   font-weight: 700;
   text-decoration: none;
-  transition: color .2s ease;
+  transition: opacity .2s ease;
 }
 #footer .copyright a:hover {
-  color: #0F172A;
+  opacity: .7;
 }
 
 #footer .footer-newsletter p {
