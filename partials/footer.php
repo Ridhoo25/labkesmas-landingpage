@@ -114,26 +114,26 @@
       selMonth.appendChild(om);
     }
 
-    function loadCounter(year,month){
-      var url='api/visitor-counter.php?year='+year+'&month='+month;
-      fetch(url).then(function(r){return r.json();}).then(function(d){
+    function loadCounter(){
+      var selY=parseInt(selYear.value);
+      var selM=parseInt(selMonth.value);
+      var isCurrent=(selY===curYear&&selM===curMonth);
+      fetch('api/visitor-counter.php').then(function(r){return r.json();}).then(function(d){
         if(elTotal)elTotal.textContent=d.total.toLocaleString('id-ID');
-        if(elMonth)elMonth.textContent=d.month.toLocaleString('id-ID');
-        if(elDay){
-          if(d.day!==null)elDay.textContent=d.day.toLocaleString('id-ID');
-          else elDay.textContent='-';
+        if(isCurrent){
+          if(elMonth)elMonth.textContent=d.month.toLocaleString('id-ID');
+          if(elDay)elDay.textContent=d.day.toLocaleString('id-ID');
+        }else{
+          if(elMonth)elMonth.textContent='-';
+          if(elDay)elDay.textContent='-';
         }
       }).catch(function(){});
     }
 
-    loadCounter(curYear,curMonth);
+    loadCounter();
 
-    selYear.addEventListener('change',function(){
-      loadCounter(parseInt(selYear.value),parseInt(selMonth.value));
-    });
-    selMonth.addEventListener('change',function(){
-      loadCounter(parseInt(selYear.value),parseInt(selMonth.value));
-    });
+    selYear.addEventListener('change',loadCounter);
+    selMonth.addEventListener('change',loadCounter);
   })();
   </script>
   </footer><!-- End Footer -->
