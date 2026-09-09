@@ -1,8 +1,6 @@
 .rtk/
 .DS_Store
 assets/data/visitor_count.json
-assets/data/reset_dates.json
-assets/data/counter_backup.json
 *.log
 thumbs.db
 desktop.ini
