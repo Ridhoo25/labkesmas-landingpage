@@ -102,6 +102,7 @@
                       <div class="org-box org-box-fung">Staf Tata Usaha</div>
                       <div class="org-box org-box-fung">Staf Kepegawaian</div>
                       <div class="org-box org-box-fung">Staf Keuangan</div>
+                      <div class="org-box org-box-fung">Staf Pelayanan Pelanggan</div>
                     </div>
                   </div>
 

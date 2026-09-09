@@ -23,12 +23,16 @@
               <li><a href="inner-layanan-kimkestok.php">Laboratorium Kimia Kesehatan & Toksikologi</a></li>
               <li><a href="inner-layanan-biomolekuler.php">Laboratorium Biomolekuler</a></li>
               <li><a href="inner-kalibrasi.php">Laboratorium Kalibrasi</a></li>
+              <li class="dropdown"><a href="#"><span>Layanan Lainnya</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Praktek/Magang Mahasiswa</a></li>
+                  <li><a href="#">Sewa Gedung</a></li>
+                </ul>
+              </li>
             </ul>
           </li>
           <li class="dropdown"><a href="#"><span>Tautan</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="https://skm.go.id/share/instansi/62982dcd-ea8f-44a3-8e08-b275a694abf1/2" target="_blank" rel="noopener">SKM Online KemenPANRB</a></li>
-              <li><a href="https://bit.ly/KuesionerSurvei2026UPTLabkeskal" target="_blank" rel="noopener">Survei Persepsi Kualitas Pelayanan (SPKP) <br> Survei Persepsi Anti Korupsi (SPAK)</a></li>
               <li class="dropdown"><a href="#"><span>Pengaduan Masyarakat</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="https://wbs.kalteng.go.id/" target="_blank" rel="noopener">Whistle Blowing Systems</a></li>
@@ -36,6 +40,22 @@
                   <li><a href="https://bit.ly/DumasUPTLabkeskal" target="_blank" rel="noopener">Layanan Pengaduan Masyarakat</a></li>
                 </ul>
               </li>
+              <li class="dropdown"><a href="#"><span>Aplikasi</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://skm.go.id/sign-in" target="_blank" rel="noopener">SKM ONLINE KEMENPANRB</a></li>
+                  <li><a href="https://evaluasi.menpan.go.id/admin/login" target="_blank" rel="noopener">PEKPPP KEMENPANRB</a></li>
+                  <li><a href="https://indeks.inovasi.bskdn.kemendagri.go.id/login" target="_blank" rel="noopener">BKSDN KEMENDAGRI</a></li>
+                  <li><a href="https://asndigital.bkn.go.id/login" target="_blank" rel="noopener">ASN Digital BKN</a></li>
+                  <li><a href="https://sinerja.bkd.kalteng.go.id./login/login" target="_blank" rel="noopener">SINERJA BKD KALTENG</a></li>
+                  <li><a href="https://sidia.live/index.php/login" target="_blank" rel="noopener">SIDIA BKAD KALTENG</a></li>
+                  <li><a href="https://sites.google.com/view/kalibrasipm/home" target="_blank" rel="noopener">SEKSI KALIBRASI</a></li>
+                  <li><a href="https://aspak.kemkes.go.id/aplikasi/" target="_blank" rel="noopener">ASPAK KEMENKES</a></li>
+                  <li><a href="https://satusehat.kemkes.go.id/sdmk" target="_blank" rel="noopener">SATUSEHAT SDMK KEMENKES</a></li>
+                  <li><a href="https://dfo.kemkes.go.id/v2/" target="_blank" rel="noopener">DFO KEMENKES</a></li>
+                </ul>
+              </li>
+              <li><a href="https://skm.go.id/share/instansi/62982dcd-ea8f-44a3-8e08-b275a694abf1/2" target="_blank" rel="noopener">Survey Kepuasan Masyarakat Online</a></li>
+              <li><a href="https://bit.ly/KuesionerSurvei2026UPTLabkeskal" target="_blank" rel="noopener">Survei Persepsi Kualitas Pelayanan (SPKP) <br> Survei Persepsi Anti Korupsi (SPAK)</a></li>
               <li><a href="https://sites.google.com/view/simutlak26/halaman-login" target="_blank" rel="noopener">SI MUTLAK</a></li>
               <li><a href="https://s.id/LabkesmasKalteng" target="_blank" rel="noopener">SIAP RESPON</a></li>
               <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf-OevKHcsIN98oxL0-LR9l6VjPK3lJRsnn41dR4F1q9CMycA/viewform" target="_blank" rel="noopener">BUKU TAMU DIGITAL</a></li>
@@ -47,6 +67,8 @@
             <ul>
               <li><a href="inner-galeri.php">Galeri </a></li>
               <li><a href="inner-video.php">Video </a></li>
+              <li><a href="#">Artikel</a></li>
+              <li><a href="#">Jurnal Ilmiah</a></li>
             </ul>
           </li>
           

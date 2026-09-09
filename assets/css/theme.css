@@ -280,7 +280,7 @@ body:has(#hero) #header:not(.header-scrolled) .mobile-nav-toggle { color: var(--
   padding: .5rem;
   margin-top: 10px;
 }
-#navbar .dropdown ul li { background: transparent; }
+#navbar .dropdown ul li { background: transparent; position: relative; }
 #navbar .dropdown ul a {
   color: var(--ink) !important;
   font-family: var(--font-head);
@@ -288,6 +288,9 @@ body:has(#hero) #header:not(.header-scrolled) .mobile-nav-toggle { color: var(--
   font-size: .95rem;
   padding: .5rem 1rem !important;
   border-radius: 10px;
+}
+#navbar .dropdown .dropdown ul a {
+  font-size: .80rem;
 }
 #navbar .dropdown ul a:hover {
   background: var(--brand-grad-soft);
@@ -1311,7 +1314,6 @@ body:has(#hero) #header:not(.header-scrolled) .mobile-nav-toggle { color: var(--
   #footer .footer-info p { font-size: .8rem; line-height: 1.5; }
   #footer .footer-links ul li a { font-size: .8rem; }
   #footer .copyright { font-size: .78rem; }
-  .visitor-counter-table { font-size: .78rem; }
 }
 @media (max-width: 576px) {
   #topbar { height: 32px; font-size: .7rem; }
@@ -1328,8 +1330,6 @@ body:has(#hero) #header:not(.header-scrolled) .mobile-nav-toggle { color: var(--
   #footer .footer-links ul li a { font-size: .75rem; }
   #footer .social-links a { width: 30px; height: 30px; font-size: .85rem; }
   #footer .copyright { font-size: .72rem; }
-  .visitor-counter-table { font-size: .72rem; }
-  .visitor-counter-table td { padding: .2rem .6rem .2rem 0; }
 }
 /* --- Responsive map --- */
 .contact-map { border-radius: var(--radius) !important; }

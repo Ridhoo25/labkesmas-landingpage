@@ -16,15 +16,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <link rel="preload" as="image" href="assets/img/slide/fotbaryettie.JPG">
+
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" media="print" onload="this.media='all'">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'">
   
 
   <!-- Template Main CSS File -->
@@ -182,7 +184,7 @@
         <div class="row align-items-stretch">
           <div class="col-lg-6 d-flex" data-aos="fade-right">
             <div class="about-image-card">
-              <img src="assets/img/home/foto-bersama.jpeg" class="about-img" alt="Foto Bersama UPT Laboratorium Kesehatan dan Kalibrasi Tingkat 3">
+              <img src="assets/img/home/foto-bersama.jpeg" class="about-img" alt="Foto Bersama UPT Laboratorium Kesehatan dan Kalibrasi Tingkat 3" loading="lazy">
             </div>
           </div>
           <div class="col-lg-6 d-flex" data-aos="fade-left">
@@ -448,7 +450,7 @@
       </div>
 
       <div>
-        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63789.62767232082!2d113.86046505891967!3d-2.2096160096890616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dfcbf116a995427%3A0xfa758015ddea8a0a!2sPalangkaraya%2C%20Kec.%20Jekan%20Raya%2C%20Kota%20Palangka%20Raya%2C%20Kalimantan%20Tengah!5e0!3m2!1sid!2sid!4v1728491907275!5m2!1sid!2sid"frameborder="0" allowfullscreen class="contact-map"></iframe>
+        <iframe style="border:0; width: 100%; height: 280px;" src="https://www.google.com/maps?q=Laboratorium+Kesehatan+Provinsi+Kalimantan+Tengah&output=embed&z=17" frameborder="0" allowfullscreen class="contact-map" loading="lazy"></iframe>
       </div>
 
       <div class="container">

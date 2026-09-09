@@ -53,24 +53,7 @@
               <div class="newsletter-success" style="display:none; color:var(--secondary); margin-top:8px; font-size:0.9rem;">Terima kasih telah berlangganan!</div>
             </form>
             <div class="mt-3" style="font-size:.75rem; color:#fff;">
-              <div style="margin-bottom:6px;">
-                <select id="vc-filter-year" class="vc-select"></select>
-                <select id="vc-filter-month" class="vc-select" style="margin-left:4px;"></select>
-              </div>
-              <div class="table-responsive">
-              <table class="visitor-counter-table">
-                <tr>
-                  <td>Total</td>
-                  <td>Bulan ini</td>
-                  <td>Hari ini</td>
-                </tr>
-                <tr>
-                  <td><strong id="vc-total">-</strong></td>
-                  <td><strong id="vc-month">-</strong></td>
-                  <td><strong id="vc-day">-</strong></td>
-                </tr>
-              </table>
-              </div>
+              <span>Total Pengunjung: <strong id="vc-total">-</strong></span>
             </div>
           </div>
 
@@ -80,60 +63,18 @@
 
     <div class="container">
       <div class="copyright">
-       2026 &copy; <a href="https://www.instagram.com/ridhooe_/" target="_blank" rel="noopener"> <strong><span>M. Jamaludin Ridho</span></strong> </a> | Seksi Pemeliharaan Alat Kesehatan dan Kalibrasi
+       2025 - 2026 &copy; <a href="https://www.instagram.com/ridhooe_/" target="_blank" rel="noopener"> <strong><span>M. Jamaludin Ridho</span></strong> </a> | Seksi Pemeliharaan Alat Kesehatan dan Kalibrasi
       </div>
       <div class="credits">
       </div>
     </div>
 
-  <style>
-  .vc-select{background:var(--primary);color:#fff;border:none;border-radius:4px;padding:2px 6px;font-size:.7rem}
-  .vc-select option{background:var(--primary);color:#fff}
-  </style>
   <script>
   (function(){
     var elTotal=document.getElementById('vc-total');
-    var elMonth=document.getElementById('vc-month');
-    var elDay=document.getElementById('vc-day');
-    var selYear=document.getElementById('vc-filter-year');
-    var selMonth=document.getElementById('vc-filter-month');
-    var monthNames=['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'];
-
-    var now=new Date();
-    var curYear=now.getFullYear();
-    var curMonth=now.getMonth()+1;
-
-    for(var y=curYear;y>=curYear-4;y--){
-      var o=document.createElement('option');o.value=y;o.textContent=y;
-      if(y===curYear)o.selected=true;
-      selYear.appendChild(o);
-    }
-    for(var m=1;m<=12;m++){
-      var om=document.createElement('option');om.value=m;om.textContent=monthNames[m-1];
-      if(m===curMonth)om.selected=true;
-      selMonth.appendChild(om);
-    }
-
-    function loadCounter(){
-      var selY=parseInt(selYear.value);
-      var selM=parseInt(selMonth.value);
-      var isCurrent=(selY===curYear&&selM===curMonth);
-      fetch('api/visitor-counter.php').then(function(r){return r.json();}).then(function(d){
-        if(elTotal)elTotal.textContent=d.total.toLocaleString('id-ID');
-        if(isCurrent){
-          if(elMonth)elMonth.textContent=d.month.toLocaleString('id-ID');
-          if(elDay)elDay.textContent=d.day.toLocaleString('id-ID');
-        }else{
-          if(elMonth)elMonth.textContent='-';
-          if(elDay)elDay.textContent='-';
-        }
-      }).catch(function(){});
-    }
-
-    loadCounter();
-
-    selYear.addEventListener('change',loadCounter);
-    selMonth.addEventListener('change',loadCounter);
+    fetch('api/visitor-counter.php').then(function(r){return r.json();}).then(function(d){
+      if(elTotal)elTotal.textContent=d.total.toLocaleString('id-ID');
+    }).catch(function(){});
   })();
   </script>
   </footer><!-- End Footer -->
@@ -141,23 +82,32 @@
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <script src="assets/js/search.js"></script>
-  <script src="assets/js/accessibility.js"></script>
+  <a href="https://wa.me/6285824184658" target="_blank" rel="noopener" class="wa-fab" aria-label="Chat WhatsApp" title="Chat via WhatsApp">
+    <svg viewBox="0 0 32 32" fill="#fff" width="26" height="26"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.132 6.744 3.054 9.374L1.054 31.25l6.114-1.98C9.774 30.998 12.774 32 16.004 32 24.83 32 32 24.822 32 16S24.83 0 16.004 0zm9.35 22.604c-.39 1.1-1.932 2.014-3.15 2.28-.834.18-1.924.322-5.586-1.202-4.686-1.946-7.692-6.72-7.922-7.026-.224-.306-1.86-2.476-1.86-4.722 0-2.246 1.18-3.35 1.6-3.812.39-.466.926-.612 1.232-.612.31 0 .618.002.886.016.284.014.666-.108 1.038.79.39.946 1.328 3.232 1.444 3.466.118.234.196.506.04.812-.154.312-.23.506-.458.78-.228.274-.48.612-.684.82-.228.234-.464.488-.196.962.268.474 1.192 1.968 2.56 3.188 1.762 1.57 3.242 2.056 3.716 2.284.474.228.75.19 1.024-.116.274-.306 1.174-1.366 1.484-1.842.312-.474.624-.394 1.054-.236.434.156 2.744 1.294 3.214 1.528.474.234.788.352.906.546.118.194.118 1.13-.272 2.232z"/></svg>
+  </a>
+  <style>
+    .wa-fab{position:fixed;bottom:80px;left:20px;z-index:99998;width:54px;height:54px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,.4);transition:transform .2s}
+    .wa-fab:hover{transform:scale(1.1)}
+    @media(max-width:991px){.wa-fab{bottom:80px;left:16px;width:48px;height:48px}.wa-fab svg{width:22px;height:22px}}
+  </style>
+
+  <script src="assets/js/search.js" defer></script>
+  <script src="assets/js/accessibility.js" defer></script>
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+  <script src="assets/vendor/php-email-form/validate.js" defer></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
   <!-- Modern theme: smooth scroll + motion -->
-  <script src="assets/vendor/gsap/gsap.min.js"></script>
-  <script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
-  <script src="assets/js/theme.js"></script>
+  <script src="assets/vendor/gsap/gsap.min.js" defer></script>
+  <script src="assets/vendor/gsap/ScrollTrigger.min.js" defer></script>
+  <script src="assets/js/theme.js" defer></script>
 
 </body>
 
