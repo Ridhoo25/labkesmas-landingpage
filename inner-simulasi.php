@@ -338,7 +338,9 @@
           { id: "tds_meter", nama: "TDS Meter", harga: 0 },
           { id: "konduktivity_meter", nama: "Konduktivitas Meter", harga: 0 },
           { id: "do_meter", nama: "DO Meter", harga: 0 },
-          { id: "salinit_meter", nama: "Salinitas Meter", harga: 0 }
+          { id: "salinit_meter", nama: "Salinitas Meter", harga: 0 },
+          { id: "lampu_op_ceiling", nama: "Lampu Operasi Ceiling", harga: 0 },
+          { id: "lampu_op_mobile", nama: "Lampu Operasi Mobile", harga: 0 }
         ]
       }
     };

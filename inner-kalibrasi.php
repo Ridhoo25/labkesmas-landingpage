@@ -153,7 +153,7 @@
                 <i class="bi bi-eyedropper"></i>
                 <h4>Daftar Kemampuan Layanan</h4>
               </div>
-              <p class="text-muted mb-3">13 jenis alat yang dapat dikalibrasi di Laboratorium Kalibrasi. Tarif simulasi <strong>Rp 0</strong> (lihat <a href="inner-simulasi.php">Simulasi Tarif</a>).</p>
+              <p class="text-muted mb-3">15 jenis alat yang dapat dikalibrasi di Laboratorium Kalibrasi. Tarif simulasi <strong>Rp 0</strong> (lihat <a href="inner-simulasi.php">Simulasi Tarif</a>).</p>
               <div class="table-responsive">
                 <table class="table table-bordered table-hover align-middle kalibrasi-table">
                   <thead>
@@ -177,6 +177,8 @@
                     <tr><td>11</td><td>Konduktivity Meter</td><td class="text-center"><span class="badge bg-primary">Rp 0</span></td></tr>
                     <tr><td>12</td><td>DO Meter</td><td class="text-center"><span class="badge bg-primary">Rp 0</span></td></tr>
                     <tr><td>13</td><td>Salinitas Meter</td><td class="text-center"><span class="badge bg-primary">Rp 0</span></td></tr>
+                    <tr><td>14</td><td>Lampu Operasi Ceiling</td><td class="text-center"><span class="badge bg-primary">Rp 0</span></td></tr>
+                    <tr><td>15</td><td>Lampu Operasi Mobile</td><td class="text-center"><span class="badge bg-primary">Rp 0</span></td></tr>
                   </tbody>
                 </table>
               </div>
