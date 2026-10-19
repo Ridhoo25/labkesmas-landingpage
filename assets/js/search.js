@@ -15,6 +15,7 @@
     { title: "Laboratorium Kalibrasi", url: "inner-kalibrasi.php", keywords: "kalibrasi ukur alat", cat: "Halaman" },
     { title: "Galeri", url: "inner-galeri.php", keywords: "galeri foto photo", cat: "Halaman" },
     { title: "Video", url: "inner-video.php", keywords: "video", cat: "Halaman" },
+    { title: "Artikel & Berita", url: "inner-artikel.php", keywords: "artikel berita pengumuman kabar terbaru", cat: "Halaman" },
     { title: "Tracking Hasil Pemeriksaan", url: "inner-tracking.php", keywords: "tracking hasil cek pemeriksaan", cat: "Halaman" },
     { title: "Simulasi Tarif", url: "inner-simulasi.php", keywords: "simulasi tarif biaya harga", cat: "Halaman" },
     { title: "Profil Kepala UPT", url: "inner-profilkepala.php", keywords: "profil kepala", cat: "Halaman" },

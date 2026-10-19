@@ -103,6 +103,7 @@ docker-compose up -d
 ├── inner-kalibrasi.php               # Laboratorium Kalibrasi
 ├── inner-galeri.php                  # Galeri
 ├── inner-video.php                   # Video
+├── inner-artikel.php                 # Artikel & Berita (data: assets/data/berita.json)
 ├── inner-tracking.php                # Tracking Hasil
 ├── inner-simulasi.php                # Simulasi Tarif
 ├── inner-profilkepala.php            # Profil Kepala UPT
@@ -129,6 +130,8 @@ docker-compose up -d
 │   │   ├── topbar.js                 # DateTime updater
 │   │   ├── search.js                 # Search modal
 │   │   └── accessibility.js          # Accessibility widget
+│   ├── data/
+│   │   └── berita.json               # Data berita/artikel
 │   ├── img/                          # Images
 │   └── vendor/                       # Third-party libraries
 ├── nginx.conf                        # Nginx config (Docker)

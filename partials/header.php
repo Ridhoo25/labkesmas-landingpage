@@ -67,7 +67,7 @@
             <ul>
               <li><a href="inner-galeri.php">Galeri </a></li>
               <li><a href="inner-video.php">Video </a></li>
-              <li><a href="#">Artikel</a></li>
+              <li><a href="inner-artikel.php">Artikel</a></li>
               <li><a href="#">Jurnal Ilmiah</a></li>
             </ul>
           </li>
