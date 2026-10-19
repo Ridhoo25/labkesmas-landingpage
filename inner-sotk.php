@@ -73,9 +73,9 @@
               <!-- Kepala UPT -->
               <div class="org-level org-level-top" data-aos="fade-down">
                 <div class="org-box org-box-head">
-                  <img src="assets/img/tentang/kepala-upt.jpg" alt="Kepala UPT" class="org-photo">
+                  <img src="assets/img/tentang/2. Budi Paryanto.JPG" alt="Kepala UPT" class="org-photo">
                   <h5>Kepala UPT Laboratorium Kesehatan dan Kalibrasi Tingkat 3</h5>
-                  <span class="org-name">dr. Damar Pramusinta, MPH</span>
+                  <span class="org-name">BUDI PARYANTO, A.Md.Kep., SKM</span>
                 </div>
               </div>
 
@@ -109,9 +109,9 @@
                   <!-- Seksi Pemeliharaan Alat Kesehatan dan Kalibrasi -->
                   <div class="org-col">
                     <div class="org-box org-box-child">
-                      <img src="assets/img/tentang/kasi-alkes.jpg" alt="Kepala Seksi Pemeliharaan Alat Kesehatan dan Kalibrasi" class="org-photo-sm">
+                      <img src="assets/img/tentang/34. Rusdiani.JPG" alt="Kepala Seksi Pemeliharaan Alat Kesehatan dan Kalibrasi" class="org-photo-sm">
                       <h5>Kepala Seksi Pemeliharaan Alat Kesehatan dan Kalibrasi</h5>
-                      <span class="org-name-sm">Eko Hafiz Rianto, S.Si., M.KL.</span>
+                      <span class="org-name-sm">RUSDIANI, S.E., M.A.P.</span>
                     </div>
                     <div class="org-connector-down-sm"><div class="org-line-v-sm"></div></div>
                     <div class="org-fungsional-group">

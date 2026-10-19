@@ -69,31 +69,31 @@
       <!-- Kolom Kiri (Gambar) -->
       <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
         <!-- Perbaikan: Mengubah fade-left ke fade-right agar efek visual masuk dari arah luar layar kiri -->
-        <img src="assets/img/tentang/dr Damar Pramusinta.JPG" 
+        <img src="assets/img/tentang/2. Budi Paryanto.JPG" 
              class="img-fluid rounded shadow" 
-             alt="dr. Damar Pramusinta, MPH - Kepala UPT">
+             alt="BUDI PARYANTO, A.Md.Kep., SKM - Kepala UPT">
       </div>
 
       <!-- Kolom Kanan (Teks) -->
       <div class="col-lg-6" data-aos="fade-left">
-        <h3 class="fw-bold mb-3">dr. Damar Pramusinta, MPH</h3>
+        <h3 class="fw-bold mb-3">BUDI PARYANTO, A.Md.Kep., SKM</h3>
         
         <!-- Perbaikan: Memecah teks panjang menjadi paragraf agar lebih nyaman dibaca (Readability) -->
         <div class="text-secondary text-justify">
           <p class="mb-3">
-            <strong>dr. Damar Pramusinta, MPH</strong> adalah seorang dokter, praktisi kesehatan masyarakat, sekaligus birokrat senior yang saat ini mengemban amanah sebagai Kepala Bidang Sumber Daya Kesehatan (SDK) dan Plt. Kepala Laboratorium Kesehatan dan Kalibrasi di Dinas Kesehatan Provinsi Kalimantan Tengah. Lahir pada 10 Maret 1976, beliau telah mendedikasikan kariernya sebagai Aparatur Sipil Negara (ASN) sejak Desember 2003 untuk memajukan sektor kesehatan di Bumi Tambun Bungai.
+            <strong>BUDI PARYANTO, A.Md.Kep., SKM</strong> adalah seorang tenaga kesehatan berkompeten di bidang keperawatan dan kesehatan masyarakat, saat ini mengemban amanah sebagai Kepala UPT Laboratorium Kesehatan dan Kalibrasi Tingkat 3 Provinsi Kalimantan Tengah. Beliau memiliki dedikasi tinggi dalam memajukan layanan laboratorium kesehatan dan kalibrasi alat kesehatan di wilayah Kalimantan Tengah.
           </p>
           
           <p class="mb-3">
-            Berbekal latar belakang pendidikan profesi Kedokteran (dr.) yang dipadukan dengan gelar magister di bidang <em>Master of Public Health</em> (MPH), dr. Damar memiliki kompetensi kuat dalam menjembatani kebutuhan klinis medis dengan kebijakan makro kesehatan masyarakat. Kombinasi keilmuan ini menjadikannya figur pemimpin yang strategis dalam mengelola sistem tata pamong kesehatan daerah.
+            Berbekal latar belakang pendidikan Diploma III Keperawatan (A.Md.Kep.) dan gelar Sarjana Kesehatan Masyarakat (SKM), Budi Paryanto memiliki fondasi keilmuan yang kuat dalam menjembatani pelayanan klinis keperawatan dengan kebijakan kesehatan masyarakat. Kombinasi keilmuan ini menjadikannya pemimpin yang memahami baik aspek teknis laboratorium maupun manajemen pelayanan kesehatan masyarakat.
           </p>
           
           <p class="mb-3">
-            Sepanjang perjalanan kariernya di lingkungan Pemerintah Provinsi Kalimantan Tengah, dr. Damar telah dipercaya menduduki berbagai posisi krusial. Beliau tercatat pernah memimpin sebagai Kepala Seksi Surveilans dan Imunisasi, sebuah posisi garda depan dalam pencegahan dan pengendalian penyakit menular. Keberhasilannya dalam manajemen taktis membawanya dipercaya menjadi Kepala UPT Laboratorium Kesehatan Daerah (Labkesda) Provinsi Kalimantan Tengah, sebelum akhirnya dipromosikan ke jajaran eselon struktural Dinas Kesehatan Provinsi. Dedikasi dan kepemimpinannya yang dinilai cakap juga sempat membawa beliau dipercaya mengemban tugas sebagai Pelaksana Tugas (Plt.) Kepala Dinas Kesehatan Provinsi Kalimantan Tengah dalam beberapa agenda transisi kepemimpinan daerah.
+            Sepanjang perjalanan kariernya sebagai Aparatur Sipil Negara (ASN) di lingkungan Pemerintah Provinsi Kalimantan Tengah, beliau telah memperoleh pengalaman luas di berbagai bidang pelayanan kesehatan. Kepemimpinan yang tegas namun humanis telah membawanya dipercaya memimpin UPT Laboratorium Kesehatan dan Kalibrasi Tingkat 3, fasilitas rujukan utama untuk pemeriksaan laboratorium kesehatan masyarakat dan kalibrasi alat kesehatan di Kalimantan Tengah.
           </p>
           
           <p class="mb-0">
-            Dalam perannya saat ini sebagai Kepala Bidang Sumber Daya Kesehatan, dr. Damar memegang tanggung jawab besar dalam memastikan ketersediaan, keterjangkauan, dan mutu sediaan farmasi, alat kesehatan, serta sarana prasarana penunjang medis di seluruh fasilitas kesehatan Kalimantan Tengah. Selaku Pengguna Anggaran (PA), beliau mengawal ketat tata kelola pengadaan logistik kesehatan agar tepat sasaran dan akuntabel. Tidak hanya berfokus pada infrastruktur fisik, beliau juga menaruh perhatian besar pada penataan dan pemerataan tenaga medis, salah satunya aktif mengawal transisi dokter-dokter muda lulusan lokal agar siap berkontribusi langsung melayani masyarakat di berbagai pelosok daerah.
+            Dalam perannya sebagai Kepala UPT, Budi Paryanto berkomitmen menguatkan sistem mutu laboratorium, memperluas cakupan layanan kalibrasi alat kesehatan, serta memastikan akreditasi dan standar nasional terpenuhi. Beliau juga aktif mendorong pengembangan SDM laboratorium melalui pelatihan berkelanjutan dan kerja sama dengan institusi pendidikan serta mitra teknis, demi terwujudnya laboratorium kesehatan yang handal, akurat, dan bertanggung jawab bagi masyarakat Kalimantan Tengah.
           </p>
         </div>
       </div>
