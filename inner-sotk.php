@@ -140,6 +140,26 @@
 
             </div>
 
+            <!-- Bagan SOTK 2026 -->
+            <div class="org-doc mt-5" data-aos="fade-up">
+              <h4 class="org-doc-title">Bagan Struktur Organisasi 2026</h4>
+              <p class="org-doc-sub">Dokumen resmi struktur organisasi Dinas Kesehatan Provinsi Kalimantan Tengah dan UPT Labkeskal Tingkat 3. Klik gambar untuk memperbesar.</p>
+              <div class="row g-4 justify-content-center">
+                <div class="col-lg-6">
+                  <a href="assets/img/tentang/SOTK%202026%20DINKES.jpeg" class="glightbox-sotk org-doc-card" data-gallery="sotk-2026" data-title="Struktur Organisasi Dinas Kesehatan Provinsi Kalimantan Tengah 2026">
+                    <img src="assets/img/tentang/SOTK%202026%20DINKES.jpeg" alt="Bagan Struktur Organisasi Dinas Kesehatan Provinsi Kalimantan Tengah 2026" loading="lazy">
+                    <span class="org-doc-label">Dinas Kesehatan Provinsi Kalimantan Tengah</span>
+                  </a>
+                </div>
+                <div class="col-lg-6">
+                  <a href="assets/img/tentang/SOTK%202026%20LABKES.jpeg" class="glightbox-sotk org-doc-card" data-gallery="sotk-2026" data-title="Struktur Organisasi UPT Laboratorium Kesehatan dan Kalibrasi Tingkat 3 2026">
+                    <img src="assets/img/tentang/SOTK%202026%20LABKES.jpeg" alt="Bagan Struktur Organisasi UPT Laboratorium Kesehatan dan Kalibrasi Tingkat 3 2026" loading="lazy">
+                    <span class="org-doc-label">UPT Labkeskal Tingkat 3 Kalimantan Tengah</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -303,7 +323,52 @@
       padding-top: 0;
     }
 
+    .org-doc-title {
+      color: #0f172a;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+    .org-doc-sub {
+      color: #64748b;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    .org-doc-card {
+      display: block;
+      height: 100%;
+      background: #fff;
+      border: 1px solid rgba(14, 165, 233, 0.15);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .org-doc-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 36px rgba(14, 165, 233, 0.15);
+    }
+    .org-doc-card img {
+      display: block;
+      width: 100%;
+      height: 420px;
+      object-fit: contain;
+      background: #f8fafc;
+    }
+    .org-doc-label {
+      display: block;
+      padding: 0.85rem 1rem;
+      border-top: 1px solid rgba(14, 165, 233, 0.12);
+      color: #0284c7;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
     @media (max-width: 992px) {
+      .org-doc-card img {
+        height: 320px;
+      }
       .org-children-row {
         flex-direction: column;
         align-items: center;
@@ -326,5 +391,17 @@
       }
     }
   </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (typeof GLightbox !== "undefined") {
+        GLightbox({
+          selector: ".glightbox-sotk",
+          touchNavigation: true,
+          loop: false
+        });
+      }
+    });
+  </script>
 
 <?php include 'partials/footer.php'; ?>
