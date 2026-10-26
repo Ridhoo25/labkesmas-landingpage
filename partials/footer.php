@@ -26,6 +26,7 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="index.php">Beranda</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="inner-sejarah.php">Tentang Kami</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="inner-jejaring.php">Jejaring Labkesmas</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="inner-layanan.php">Layanan</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="inner-ppid.php">PPID</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="inner-tracking.php">Tracking Hasil</a></li>

@@ -14,6 +14,7 @@
               <li><a href="inner-sotk.php">Struktur Organisasi</a></li>
               <li><a href="inner-tupoksi.php">Tugas dan Fungsi</a></li>
               <li><a href="inner-akreditasi.php">Akreditasi</a></li>
+              <li><a href="inner-jejaring.php">Jejaring Labkesmas</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="inner-layanan.php"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
@@ -51,6 +52,7 @@
                   <li><a href="https://sites.google.com/view/kalibrasipm/home" target="_blank" rel="noopener">SEKSI KALIBRASI</a></li>
                   <li><a href="https://aspak.kemkes.go.id/aplikasi/" target="_blank" rel="noopener">ASPAK KEMENKES</a></li>
                   <li><a href="https://satusehat.kemkes.go.id/sdmk" target="_blank" rel="noopener">SATUSEHAT SDMK KEMENKES</a></li>
+                  <li><a href="https://komdatkesprimkom.kemkes.go.id/login" target="_blank" rel="noopener">KOMDAT KESPRIMKOM KEMENKES</a></li>
                   <li><a href="https://dfo.kemkes.go.id/v2/" target="_blank" rel="noopener">DFO KEMENKES</a></li>
                 </ul>
               </li>
