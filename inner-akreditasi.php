@@ -93,6 +93,34 @@
             </div>
           </div>
 
+          <!-- Sertifikat Akreditasi Kemenkes -->
+          <div class="col-lg-8">
+            <div class="akreditasi-card">
+              <div class="akreditasi-badge">Sertifikat Akreditasi Kemenkes</div>
+              <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                  <img src="assets/img/tentang/Sertifikat akreditasi kemenkes.png" class="img-fluid akreditasi-img" alt="Sertifikat Akreditasi Kemenkes">
+                </div>
+                <div class="col-md-6">
+                  <div class="akreditasi-body">
+                    <h5>Akreditasi Kesehatan Menkes</h5>
+                    <p class="text-muted">UPT Laboratorium Kesehatan dan Kalibrasi Provinsi Kalimantan Tengah</p>
+                    <div class="akreditasi-meta">
+                      <div class="meta-item">
+                        <i class="bi bi-file-earmark-text"></i>
+                        <span>Nomor : YM.02.01/B/920/2026</span>
+                      </div>
+                      <div class="meta-item">
+                        <i class="bi bi-calendar-event"></i>
+                        <span>07 Oktober 2026 s.d 07 Oktober 2031</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Second Accreditation -->
           <div class="col-lg-8">
             <div class="akreditasi-card">

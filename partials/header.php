@@ -49,7 +49,6 @@
                   <li><a href="https://asndigital.bkn.go.id/login" target="_blank" rel="noopener">ASN Digital BKN</a></li>
                   <li><a href="https://sinerja.bkd.kalteng.go.id./login/login" target="_blank" rel="noopener">SINERJA BKD KALTENG</a></li>
                   <li><a href="https://sidia.live/index.php/login" target="_blank" rel="noopener">SIDIA BKAD KALTENG</a></li>
-                  <li><a href="https://sites.google.com/view/kalibrasipm/home" target="_blank" rel="noopener">SEKSI KALIBRASI</a></li>
                   <li><a href="https://aspak.kemkes.go.id/aplikasi/" target="_blank" rel="noopener">ASPAK KEMENKES</a></li>
                   <li><a href="https://satusehat.kemkes.go.id/sdmk" target="_blank" rel="noopener">SATUSEHAT SDMK KEMENKES</a></li>
                   <li><a href="https://komdatkesprimkom.kemkes.go.id/login" target="_blank" rel="noopener">KOMDAT KESPRIMKOM KEMENKES</a></li>
