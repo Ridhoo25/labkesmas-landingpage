@@ -75,7 +75,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="akreditasi-body">
-                    <h5>Akreditasi Laboratorium Kesehatan Masyarakat Tingkat 3</h5>
+                    <h5>Komite Akreditasi Nasional (KAN) </h5>
                     <p class="text-muted">UPT Laboratorium Kesehatan dan Kalibrasi Provinsi Kalimantan Tengah</p>
                     <div class="akreditasi-meta">
                       <div class="meta-item">
@@ -99,11 +99,11 @@
               <div class="akreditasi-badge">Sertifikat Akreditasi Kemenkes</div>
               <div class="row g-4 align-items-center">
                 <div class="col-md-6">
-                  <img src="assets/img/tentang/Sertifikat akreditasi kemenkes.png" class="img-fluid akreditasi-img" alt="Sertifikat Akreditasi Kemenkes">
+                  <img src="assets/img/tentang/1. Sertifikat Akreditasi Kemenkes 2026-2031.jpg" class="img-fluid akreditasi-img" alt="Sertifikat Akreditasi Kemenkes">
                 </div>
                 <div class="col-md-6">
                   <div class="akreditasi-body">
-                    <h5>Akreditasi Kesehatan Menkes</h5>
+                    <h5>Akreditasi Laboratorium Kesehatan Masyarakat Tingkat 3</h5>
                     <p class="text-muted">UPT Laboratorium Kesehatan dan Kalibrasi Provinsi Kalimantan Tengah</p>
                     <div class="akreditasi-meta">
                       <div class="meta-item">

@@ -183,7 +183,7 @@
                 </table>
               </div>
               <div class="alert alert-info mt-3 mb-0">
-                <i class="bi bi-info-circle me-2"></i> Daftar dapat bertambah sesuai pengembangan kemampuan laboratorium. Hubungi kami di <strong>0858-2418-4658</strong> untuk informasi terbaru.
+                <i class="bi bi-info-circle me-2"></i> Daftar dapat bertambah sesuai pengembangan kemampuan laboratorium. Hubungi kami di <strong>0858-2418-4658</strong> <br> <strong>0857-1623-3916</strong> untuk informasi terbaru.
               </div>
             </div>
           </div>
